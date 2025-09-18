@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8850946148840665916}
   - component: {fileID: 4856969008947933851}
   m_Layer: 8
-  m_Name: PlayerController
+  m_Name: TopDownCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9127723695274081779}
-  - {fileID: 3669023545024201227}
   - {fileID: 9183219645809050795}
   m_Father: {fileID: 6592871582008029070}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,8 +149,8 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   analogMovement: 0
-  cursorLocked: 1
-  cursorInputForLook: 1
+  cursorLocked: 0
+  cursorInputForLook: 0
   cursorInputRevert: 0
 --- !u!114 &4856969008947933851
 MonoBehaviour:
@@ -407,7 +406,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3669023545024201227}
   m_Father: {fileID: 4905400648689388469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7694164547186901813
@@ -489,7 +489,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4905400648689388469}
+    m_TransformParent: {fileID: 9183219645809050795}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739,
         type: 3}
@@ -514,7 +514,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739,
         type: 3}
