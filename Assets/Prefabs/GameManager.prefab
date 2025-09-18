@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3928468435126751914}
+  - component: {fileID: 4543645714649787671}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -36,6 +37,25 @@ Transform:
   - {fileID: 3253264167226378432}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4543645714649787671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286754887080997826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6debaeaa6b647b6b316ee4e308ae64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runtimeSettings: {fileID: 11400000, guid: 5d57d8cf04ab044f9a8e18e2d1c89385, type: 2}
+  cacheSize: 0
+  initActions: []
+  beginActions: []
+  tickActions: []
+  uninitActions: []
+  showHints: 0
 --- !u!1 &9196246056900594834
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3253264167226378432}
   - component: {fileID: 764697076521067309}
-  - component: {fileID: 298038755454722023}
+  - component: {fileID: 6697964367776705130}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -84,7 +104,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &298038755454722023
+--- !u!114 &6697964367776705130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,17 +113,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 9196246056900594834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1001 &2310726948718528050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,6 +153,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3928468435126751914}
     m_Modifications:
+    - target: {fileID: 1311881160922808305, guid: d2793a65d9d76b84785f3e09cf0999c8,
+        type: 3}
+      propertyPath: JumpHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5773659373903666626, guid: d2793a65d9d76b84785f3e09cf0999c8,
         type: 3}
       propertyPath: m_Name
@@ -172,7 +218,9 @@ PrefabInstance:
       propertyPath: analogMovement
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1383409787781330446, guid: d2793a65d9d76b84785f3e09cf0999c8, type: 3}
+    - {fileID: 7694164547186901813, guid: d2793a65d9d76b84785f3e09cf0999c8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
