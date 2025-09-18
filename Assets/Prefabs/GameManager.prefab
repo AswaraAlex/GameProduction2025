@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3928468435126751914}
   - component: {fileID: 4543645714649787671}
+  - component: {fileID: 7583155606178438156}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -56,6 +57,36 @@ MonoBehaviour:
   tickActions: []
   uninitActions: []
   showHints: 0
+--- !u!114 &7583155606178438156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286754887080997826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fec0d0c4161ac44b701192e743dde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: 0
+  mapResolution: {x: 1024, y: 1024}
+  mapSize: 128
+  mapOffset: {x: 0, y: 0}
+  plane: 2
+  physics: 2
+  updateUnits: 1
+  updateAutomatically: 1
+  outputToTexture: 1
+  fadeDuration: 0
+  blurType: 0
+  blurIterations: 10
+  lineOfSightAntiAliasing: 0
+  renderType: 0
+  multithreaded: 0
+  threads: 2
+  maxMillisecondsPerFrame: 5
+  cpuFogValues: 0
 --- !u!1 &9196246056900594834
 GameObject:
   m_ObjectHideFlags: 0
