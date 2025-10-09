@@ -12,6 +12,8 @@ namespace Pathfinding {
 	/// This modifier will adjust the endpoints of the path.
 	///
 	/// [Open online documentation to see images]
+	///
+	/// \ingroup modifiers
 	/// </summary>
 	public class StartEndModifier : PathModifier {
 		public override int Order { get { return 0; } }
@@ -271,7 +273,7 @@ namespace Pathfinding {
 
 				if (rayGraph != null) {
 					GraphHitInfo graphHit;
-					if (rayGraph.Linecast(from, point, out graphHit)) {
+					if (rayGraph.Linecast(from, point, hint, out graphHit)) {
 						point = graphHit.point;
 					}
 				}

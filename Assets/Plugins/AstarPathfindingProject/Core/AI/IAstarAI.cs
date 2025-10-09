@@ -290,7 +290,6 @@ namespace Pathfinding {
 
 		/// <summary>
 		/// Make the AI follow the specified path.
-		///
 		/// In case the path has not been calculated, the script will call seeker.StartPath to calculate it.
 		/// This means the AI may not actually start to follow the path until in a few frames when the path has been calculated.
 		/// The <see cref="pathPending"/> field will as usual return true while the path is being calculated.
@@ -320,9 +319,7 @@ namespace Pathfinding {
 		/// // ai.destination = ...
 		/// </code>
 		/// </summary>
-		/// <param name="path">The path to follow.</param>
-		/// <param name="updateDestinationFromPath">If true, the #destination property will be set to the end point of the path. If false, the previous destination value will be kept.</param>
-		void SetPath(Path path, bool updateDestinationFromPath = true);
+		void SetPath(Path path);
 
 		/// <summary>
 		/// Instantly move the agent to a new position.

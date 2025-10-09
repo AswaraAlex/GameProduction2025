@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
+#if UNITY_5_5_OR_NEWER
 using UnityEngine.Profiling;
+#endif
 
 namespace Pathfinding {
 	class PathReturnQueue {
@@ -48,12 +50,8 @@ namespace Pathfinding {
 					path = pathReturnQueue.Dequeue();
 				}
 
-				try {
-					// Return the path
-					((IPathInternals)path).ReturnPath();
-				} catch (System.Exception e) {
-					Debug.LogException(e);
-				}
+				// Return the path
+				((IPathInternals)path).ReturnPath();
 
 				// Will increment path state to Returned
 				((IPathInternals)path).AdvanceState(PathState.Returned);

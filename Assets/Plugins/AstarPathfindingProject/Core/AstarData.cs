@@ -12,8 +12,9 @@ namespace Pathfinding {
 	[System.Serializable]
 	/// <summary>
 	/// Stores the navigation graphs for the A* Pathfinding System.
+	/// \ingroup relevant
 	///
-	/// An instance of this class is assigned to AstarPath.data, from it you can access all graphs loaded through the <see cref="graphs"/> variable.
+	/// An instance of this class is assigned to AstarPath.data, from it you can access all graphs loaded through the <see cref="graphs"/> variable.\n
 	/// This class also handles a lot of the high level serialization.
 	/// </summary>
 	public class AstarData {
@@ -37,12 +38,6 @@ namespace Pathfinding {
 		/// Updated at scanning time
 		/// </summary>
 		public GridGraph gridGraph { get; private set; }
-
-		/// <summary>
-		/// Shortcut to the first LayerGridGraph.
-		/// Updated at scanning time.
-		/// </summary>
-		public LayerGridGraph layerGridGraph { get; private set; }
 #endif
 
 #if !ASTAR_NO_POINT_GRAPH
@@ -53,11 +48,6 @@ namespace Pathfinding {
 		public PointGraph pointGraph { get; private set; }
 #endif
 
-		/// <summary>
-		/// Shortcut to the first RecastGraph.
-		/// Updated at scanning time.
-		/// </summary>
-		public RecastGraph recastGraph { get; private set; }
 
 		/// <summary>
 		/// All supported graph types.
@@ -73,13 +63,11 @@ namespace Pathfinding {
 		public static readonly System.Type[] DefaultGraphTypes = new System.Type[] {
 #if !ASTAR_NO_GRID_GRAPH
 			typeof(GridGraph),
-			typeof(LayerGridGraph),
 #endif
 #if !ASTAR_NO_POINT_GRAPH
 			typeof(PointGraph),
 #endif
 			typeof(NavMeshGraph),
-			typeof(RecastGraph),
 		};
 #endif
 
@@ -99,7 +87,7 @@ namespace Pathfinding {
 		///
 		/// This can be accessed as a byte array from the <see cref="data"/> property.
 		///
-		/// Since: 3.6.1
+		/// \since 3.6.1
 		/// </summary>
 		[SerializeField]
 		string dataString;
@@ -107,7 +95,7 @@ namespace Pathfinding {
 		/// <summary>
 		/// Data from versions from before 3.6.1.
 		/// Used for handling upgrades
-		/// Since: 3.6.1
+		/// \since 3.6.1
 		/// </summary>
 		[SerializeField]
 		[UnityEngine.Serialization.FormerlySerializedAs("data")]
@@ -249,14 +237,11 @@ namespace Pathfinding {
 
 #if !ASTAR_NO_GRID_GRAPH
 			gridGraph = (GridGraph)FindGraphOfType(typeof(GridGraph));
-			layerGridGraph = (LayerGridGraph)FindGraphOfType(typeof(LayerGridGraph));
 #endif
 
 #if !ASTAR_NO_POINT_GRAPH
 			pointGraph = (PointGraph)FindGraphOfType(typeof(PointGraph));
 #endif
-
-			recastGraph = (RecastGraph)FindGraphOfType(typeof(RecastGraph));
 		}
 
 		/// <summary>Load from data from <see cref="file_cachedStartup"/></summary>
