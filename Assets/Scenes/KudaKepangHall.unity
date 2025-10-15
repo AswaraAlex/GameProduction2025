@@ -1129,6 +1129,7 @@ GameObject:
   - component: {fileID: 857149093}
   - component: {fileID: 857149092}
   - component: {fileID: 857149091}
+  - component: {fileID: 857149094}
   m_Layer: 0
   m_Name: DoorTrigger5
   m_TagString: Untagged
@@ -1222,6 +1223,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857149089}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &857149094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857149089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3586afbf28c64d03bef1f56ce2a79a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHints: 0
+  collisionDirect: 0
+  runEvenInactive: 0
+  runEvenDisabled: 0
+  stopOnDeactivate: 0
+  runnerVariable: {fileID: 0}
+  customTag:
+    name: Tag
+    tagRaw: 1
+    data: {fileID: 0}
+    dirty: 0
+  printFlowLog: 0
+  graph:
+    type: 10
+    rootNode:
+      rid: 7301283120776478720
+    nodes:
+    - rid: 7301283120776478720
+    - rid: 7301283120776478721
+    - rid: 7301283120776478727
+    - rid: 7301283120776478728
+    executes:
+      executionList: []
+    id: 857149094
+    viewPosition: {x: 372.8, y: 26.4, z: 0}
+    viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+    haveValidGraphId: 1
+    previewNode:
+      rid: -2
+    previewSelected: 0
+    multipleSelectionWarning: Multiple Dialog Tree selected!
+    editInPrefabModeWarning: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 7301283120776478720
+      type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 03c17c79-1878-4820-bd5d-38b4fce76fa8
+        printDebugLog: 1
+        position: {x: -54.56896, y: -68.56104}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 7301283120776478721
+        parent:
+          rid: -2
+        parents: []
+        drawGizmos: 0
+    - rid: 7301283120776478721
+      type: {class: CollisionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 6807b6956b45edf40823f0113bb4be04
+        printDebugLog: 1
+        position: {x: -104.78094, y: 79.818275}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 7301283120776478727
+        parent:
+          rid: -2
+        parents:
+        - rid: 7301283120776478720
+        drawGizmos: 0
+        triggerType: 11
+        specificCollision: []
+        matchInfo:
+          specificNames: []
+          excludeTags: []
+          excludeLayers: []
+          onlyTags: []
+          onlyLayers: []
+          inOutDetection: 0
+          leftToRight: 1
+          rightToLeft: 1
+          topToBottom: 1
+          bottomToTop: 1
+          uniqueDetection: 0
+          dirty: 0
+        interactorVariable: {fileID: 0}
+    - rid: 7301283120776478727
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: a20e48b73dba7684a9266ac02ab0b9ec
+        printDebugLog: 1
+        position: {x: -105.083984, y: 219.51198}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 7301283120776478728
+        parent:
+          rid: -2
+        parents:
+        - rid: 7301283120776478721
+        drawGizmos: 0
+        triggerNode: 6807b6956b45edf40823f0113bb4be04
+        executionType: 10
+    - rid: 7301283120776478728
+      type: {class: DebugBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: bb575bf710f451d4fbcfcb62614e08e7
+        printDebugLog: 1
+        position: {x: -106.600006, y: 360.59604}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 7301283120776478727
+        drawGizmos: 0
+        executionType: 101
+        message:
+          dirty: 0
+          stringValue: collisionentered
+          variableValue: {fileID: 0}
+          type: 0
+        variable: {fileID: 0}
+        breakPoint: 0
 --- !u!1 &877180107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2843,7 @@ PrefabInstance:
     - target: {fileID: 3928468435126751914, guid: 908c8914431034cd49e0df295a10a110,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38
+      value: -43.59
       objectReference: {fileID: 0}
     - target: {fileID: 3928468435126751914, guid: 908c8914431034cd49e0df295a10a110,
         type: 3}
