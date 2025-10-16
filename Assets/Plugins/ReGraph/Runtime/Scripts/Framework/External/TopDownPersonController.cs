@@ -24,6 +24,9 @@ namespace Reshape.ReFramework
         [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
 
+        [Tooltip("Turning speed of the character in m/s")]
+        public float TurnSpeed = 10f;
+
         [Tooltip("Rotation speed of the character")]
         private float RotationSpeed = 1.0f;
 
@@ -285,38 +288,36 @@ namespace Reshape.ReFramework
             // if there is a move input rotate player when the player is moving
             if (_input.move != Vector2.zero && model != null)
             {
-                if (_input.move is {x: 0, y: > 0})
+                float targetAngle = 0f;
+                float angle = model.transform.eulerAngles.y;
+                if (_input.move is { x: 0, y: > 0 })
+                    targetAngle = angle > 180 ? 360 : 0;
+                else if (_input.move is { x: 0, y: < 0 })
+                    targetAngle = 180f;
+                else if (_input.move is { x: < 0, y: 0 })
+                    targetAngle = angle > 90 ? 270 : -90;
+                else if (_input.move is { x: > 0, y: 0 })
+                    targetAngle = 90f;
+                else if (_input.move is { x: > 0, y: > 0 })
+                    targetAngle = angle > 225 ? 405f : 45;
+                else if (_input.move is { x: > 0, y: < 0 })
+                    targetAngle = 135f;
+                else if (_input.move is { x: < 0, y: < 0 })
+                    targetAngle = 225f;
+                else if (_input.move is { x: < 0, y: > 0 })
+                    targetAngle = angle > 135 ? 315f : -45;
+                if (TurnSpeed <= 0)
+                    angle = targetAngle;
+                else
                 {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 0, 0.0f);
+                    float diff = targetAngle - angle;
+                    float speed = TurnSpeed * ReTime.deltaTime;
+                    if (Mathf.Abs(diff) < speed)
+                        angle = targetAngle;
+                    else
+                        angle += diff > 0 ? speed : -speed;
                 }
-                else if (_input.move is {x: 0, y: < 0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 180, 0.0f);
-                }
-                else if (_input.move is {x: <0, y: 0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 270, 0.0f);
-                }
-                else if (_input.move is {x: >0, y: 0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 90, 0.0f);
-                }
-                else if (_input.move is {x: >0, y: >0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 45, 0.0f);
-                }
-                else if (_input.move is {x: >0, y: <0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 135, 0.0f);
-                }
-                else if (_input.move is {x: <0, y: <0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 225, 0.0f);
-                }
-                else if (_input.move is {x: <0, y: >0})
-                {
-                    model.transform.rotation = Quaternion.Euler(0.0f, 315, 0.0f);
-                }
+                model.transform.rotation = Quaternion.Euler(0.0f, angle, 0.0f);
             }
 
 
