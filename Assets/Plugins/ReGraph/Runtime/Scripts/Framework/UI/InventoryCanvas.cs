@@ -535,10 +535,13 @@ namespace Reshape.ReFramework
             buySellPanel = null;
             currentInv1 = string.Empty;
             currentInv2 = string.Empty;
-            currencyPanel.gameObject.SetActiveOpt(false);
+            if (currencyPanel)
+                currencyPanel.gameObject.SetActiveOpt(false);
             pickInv = string.Empty;
-            itemTooltip.Hide();
-            itemPick.Hide();
+            if (itemTooltip)
+                itemTooltip.Hide();
+            if (itemPick)
+                itemPick.Hide();
             canvas.enabled = false;
         }
 
@@ -546,7 +549,8 @@ namespace Reshape.ReFramework
         {
             base.Awake();
             leftPanelPos = leftPanel.position;
-            rightPanelPos = rightPanel.position;
+            if (rightPanel)
+                rightPanelPos = rightPanel.position;
             Hide();
         }
 
