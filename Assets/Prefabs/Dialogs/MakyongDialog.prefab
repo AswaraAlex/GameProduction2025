@@ -1,0 +1,768 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &768688160059337361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2793852156913738383}
+  - component: {fileID: 3086141312410598597}
+  m_Layer: 29
+  m_Name: Dialog1 (MakyongEntrance)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2793852156913738383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768688160059337361}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2916716878917571416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3086141312410598597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768688160059337361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3586afbf28c64d03bef1f56ce2a79a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHints: 0
+  collisionDirect: 0
+  runEvenInactive: 1
+  runEvenDisabled: 1
+  stopOnDeactivate: 0
+  runnerVariable: {fileID: 0}
+  customTag:
+    name: Tag
+    tagRaw: 1
+    data: {fileID: 0}
+    dirty: 0
+  printFlowLog: 0
+  graph:
+    type: 10
+    rootNode:
+      rid: 1851010444251365426
+    nodes:
+    - rid: 1851010444251365426
+    - rid: 1900369651413811218
+    - rid: 1900369651413811219
+    - rid: 1900369651413811248
+    - rid: 1900369651413811294
+    - rid: 3849152858475462656
+    executes:
+      executionList:
+      - state: 1
+        parameters:
+          actionName: Activate
+          interactedGo: {fileID: 0}
+          interactedMono: {fileID: 0}
+          characterBrain: {fileID: 0}
+          characterBrainAddon: {fileID: 0}
+        lastExecutedUpdateId: 412
+    id: 753155269
+    viewPosition: {x: 356, y: -438, z: 0}
+    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
+    haveValidGraphId: 1
+    previewNode:
+      rid: -2
+    previewSelected: 0
+    multipleSelectionWarning: Multiple Graph Nodes Selected!
+    editInPrefabModeWarning: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1851010444251365426
+      type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: be7629dd-58d9-4039-aba1-056c1bd9148e
+        printDebugLog: 1
+        position: {x: 0, y: 12}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811248
+        parent:
+          rid: -2
+        parents: []
+        drawGizmos: 0
+    - rid: 1900369651413811218
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: b50401cd79e5aaa47a5b538dcd5ea795
+        printDebugLog: 1
+        position: {x: -0.000091552734, y: 256}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811294
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811248
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Huh...
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369651413811219
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7d6745e8773c0104d8e0fc88c958f802
+        printDebugLog: 1
+        position: {x: -0.000014781952, y: 676.8681}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 3849152858475462656
+        drawGizmos: 0
+        executionType: 1000
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369651413811248
+      type: {class: ActionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: eaa34c8b857697149bac533bd89cbb66
+        printDebugLog: 1
+        position: {x: 0, y: 134}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811218
+        parent:
+          rid: -2
+        parents:
+        - rid: 1851010444251365426
+        drawGizmos: 0
+        actionName: {fileID: 11400000, guid: 39a11f4b939ab4ff8af374d902bed8b9, type: 2}
+    - rid: 1900369651413811294
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: fb3b94e42bfa25c42b2bd1db7aec811b
+        printDebugLog: 1
+        position: {x: 0, y: 387.6405}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 3849152858475462656
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811218
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: 'Is this the last ''creepy'' room? '
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3849152858475462656
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 782cd6e747fec904fa5d4537c36bf67f
+        printDebugLog: 1
+        position: {x: -0.000015258789, y: 531.087}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811219
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811294
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Says here it's the 'Makyong' room. Alright, show me what you
+            got here then.
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+--- !u!1 &3581818964626067891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2916716878917571416}
+  m_Layer: 29
+  m_Name: MakyongDialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2916716878917571416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581818964626067891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2793852156913738383}
+  - {fileID: 1685845699815194265}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6941187829386753590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685845699815194265}
+  - component: {fileID: 2549872027131676741}
+  m_Layer: 29
+  m_Name: Dialog2 (RetrieveRotan)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685845699815194265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941187829386753590}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2916716878917571416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2549872027131676741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941187829386753590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3586afbf28c64d03bef1f56ce2a79a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHints: 0
+  collisionDirect: 0
+  runEvenInactive: 1
+  runEvenDisabled: 1
+  stopOnDeactivate: 0
+  runnerVariable: {fileID: 0}
+  customTag:
+    name: Tag
+    tagRaw: 1
+    data: {fileID: 0}
+    dirty: 0
+  printFlowLog: 0
+  graph:
+    type: 10
+    rootNode:
+      rid: 1851010444251365426
+    nodes:
+    - rid: 1851010444251365426
+    - rid: 1900369651413811218
+    - rid: 1900369651413811219
+    - rid: 1900369651413811248
+    - rid: 1900369651413811294
+    - rid: 3849152858475462656
+    executes:
+      executionList:
+      - state: 1
+        parameters:
+          actionName: Activate
+          interactedGo: {fileID: 0}
+          interactedMono: {fileID: 0}
+          characterBrain: {fileID: 0}
+          characterBrainAddon: {fileID: 0}
+        lastExecutedUpdateId: 412
+    id: 1340311621
+    viewPosition: {x: 438, y: -131, z: 0}
+    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+    haveValidGraphId: 1
+    previewNode:
+      rid: 3849152858475462656
+    previewSelected: 1
+    multipleSelectionWarning: Multiple Graph Nodes Selected!
+    editInPrefabModeWarning: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1851010444251365426
+      type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: be7629dd-58d9-4039-aba1-056c1bd9148e
+        printDebugLog: 1
+        position: {x: 0, y: 12}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811248
+        parent:
+          rid: -2
+        parents: []
+        drawGizmos: 0
+    - rid: 1900369651413811218
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: b50401cd79e5aaa47a5b538dcd5ea795
+        printDebugLog: 1
+        position: {x: -0.000091552734, y: 256}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811294
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811248
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: 'Retrieved: Rotan Berai'
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369651413811219
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7d6745e8773c0104d8e0fc88c958f802
+        printDebugLog: 1
+        position: {x: -0.000014781952, y: 676.8681}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 3849152858475462656
+        drawGizmos: 0
+        executionType: 1000
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369651413811248
+      type: {class: ActionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: eaa34c8b857697149bac533bd89cbb66
+        printDebugLog: 1
+        position: {x: 0, y: 134}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811218
+        parent:
+          rid: -2
+        parents:
+        - rid: 1851010444251365426
+        drawGizmos: 0
+        actionName: {fileID: 11400000, guid: 39a11f4b939ab4ff8af374d902bed8b9, type: 2}
+    - rid: 1900369651413811294
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: fb3b94e42bfa25c42b2bd1db7aec811b
+        printDebugLog: 1
+        position: {x: 0, y: 387.6405}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 3849152858475462656
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811218
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: So this is the last one, The Rotan Berai.
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3849152858475462656
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 782cd6e747fec904fa5d4537c36bf67f
+        printDebugLog: 1
+        position: {x: -0.000015258789, y: 531.087}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811219
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811294
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Better keep it safe in my bag first. Don't want to lose them.
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
