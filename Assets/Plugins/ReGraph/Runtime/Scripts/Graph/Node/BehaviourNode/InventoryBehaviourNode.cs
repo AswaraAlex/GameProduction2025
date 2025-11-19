@@ -757,30 +757,30 @@ namespace Reshape.ReGraph
             }
             else if (executionType == ExecutionType.GetItemName)
             {
-                if (item == null || paramWord1 == null)
+                if (itemType == 3)
                 {
-                    LogWarning("Found an empty Inventory Behaviour node in " + context.objectName);
+                    if (paramWord1 == null || string.IsNullOrEmpty(inventoryName))
+                    {
+                        LogWarning("Found an empty Inventory Behaviour node in " + context.objectName);
+                    }
+                    else
+                    {
+                        var manager = GraphManager.instance.runtimeSettings.itemManager;
+                        var itemData = manager.GetItemData(inventoryName);
+                        if (itemData != null)
+                            paramWord1.SetValue(itemData.displayName);
+                    }
                 }
                 else
                 {
-                    if (itemType == 3)
+                    if (item == null)
                     {
-                        if (string.IsNullOrEmpty(inventoryName))
-                        {
-                            LogWarning("Found an empty Inventory Behaviour node in " + context.objectName);
-                        }
-                        else
-                        {
-                            var manager = GraphManager.instance.runtimeSettings.itemManager;
-                            var itemData = manager.GetItemData(inventoryName);
-                            if (itemData != null)
-                                paramWord1.SetValue(itemData.displayName);
-                        }
+                        LogWarning("Found an empty Inventory Behaviour node in " + context.objectName);
                     }
                     else
                     {
                         paramWord1.SetValue(item.displayName);
-                    }
+                    }    
                 }
             }
             else if (executionType == ExecutionType.GetItemDesc)
