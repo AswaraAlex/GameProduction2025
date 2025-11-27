@@ -1279,15 +1279,16 @@ MonoBehaviour:
     - rid: 1900370126729380030
     - rid: 1900370126729380070
     - rid: 1900370126729380071
+    - rid: 1900370126729380281
     executes:
       executionList: []
     id: 44546347
-    viewPosition: {x: -205, y: -196, z: 0}
-    viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+    viewPosition: {x: -75, y: -540, z: 0}
+    viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 1900370126729380013
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -2127,7 +2128,7 @@ MonoBehaviour:
         enabled: 1
         guid: 20c6ac6c22918514c9b18e40b4279784
         printDebugLog: 1
-        position: {x: 460.00006, y: 560.0001}
+        position: {x: 460, y: 560}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2199,7 +2200,7 @@ MonoBehaviour:
         enabled: 1
         guid: f10ccdf92554e724c8d37491d72d3b46
         printDebugLog: 1
-        position: {x: 460, y: 926}
+        position: {x: 460.00006, y: 925.99994}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2278,7 +2279,7 @@ MonoBehaviour:
         enabled: 1
         guid: 54fb297f7dcca6e45a9c64bb200ffce9
         printDebugLog: 1
-        position: {x: 460.00003, y: 1170.0002}
+        position: {x: 460, y: 1170}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2334,7 +2335,7 @@ MonoBehaviour:
         enabled: 1
         guid: 3b9f79a24ae0c6341974e21fe16f1c8f
         printDebugLog: 1
-        position: {x: 460.00003, y: 1292.0002}
+        position: {x: 460, y: 1292}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2350,10 +2351,11 @@ MonoBehaviour:
         enabled: 1
         guid: 97ad2056cb9c3084c84ccbdd888096f1
         printDebugLog: 1
-        position: {x: 460.00003, y: 1048.0002}
+        position: {x: 460, y: 1048}
         dirty: 0
         forceRepaint: 0
         children:
+        - rid: 1900370126729380281
         - rid: 1900370126729380011
         parent:
           rid: -2
@@ -2845,6 +2847,29 @@ MonoBehaviour:
         stamina: {fileID: 0}
         attackSkill: {fileID: 0}
         actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1900370126729380281
+      type: {class: DebugBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 8365c29b1ec91d34c994e0cfa8310be9
+        printDebugLog: 1
+        position: {x: 310, y: 1170}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900370126729380013
+        drawGizmos: 0
+        executionType: 102
+        message:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        variable: {fileID: 11400000, guid: d155014051432e549ae00c0512b738f0, type: 2}
+        breakPoint: 0
 --- !u!4 &44546348
 Transform:
   m_ObjectHideFlags: 0
