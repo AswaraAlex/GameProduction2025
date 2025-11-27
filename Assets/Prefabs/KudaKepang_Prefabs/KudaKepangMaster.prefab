@@ -1,0 +1,1151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3620600086434013929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225233480014847545}
+  - component: {fileID: 210798863818743917}
+  - component: {fileID: 3626771638324536179}
+  m_Layer: 0
+  m_Name: RearDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225233480014847545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620600086434013929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -0.474}
+  m_LocalScale: {x: 1, y: 1, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3899413781630564893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &210798863818743917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620600086434013929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3626771638324536179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620600086434013929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3586afbf28c64d03bef1f56ce2a79a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHints: 0
+  collisionDirect: 0
+  runEvenInactive: 0
+  runEvenDisabled: 0
+  stopOnDeactivate: 0
+  runnerVariable: {fileID: 0}
+  customTag:
+    name: Tag
+    tagRaw: 1
+    data: {fileID: 0}
+    dirty: 0
+  printFlowLog: 0
+  graph:
+    type: 10
+    rootNode:
+      rid: 1900369967783346255
+    nodes:
+    - rid: 1900369967783346255
+    - rid: 1900369967783346256
+    - rid: 1900369967783346257
+    - rid: 1900369967783346258
+    - rid: 1900369967783346259
+    - rid: 1900369967783346261
+    - rid: 1900369967783346262
+    - rid: 1900369967783346263
+    - rid: 1900369967783346264
+    - rid: 1900369967783346265
+    - rid: 1900369967783346266
+    - rid: 1900369967783346267
+    - rid: 1900369967783346303
+    - rid: 1900369967783346365
+    - rid: 1900369967783346366
+    - rid: 1900369967783346367
+    - rid: 1900369967783346384
+    - rid: 1900369967783346401
+    - rid: 1900369967783346402
+    - rid: 1900369967783346403
+    - rid: 1900369967783346404
+    - rid: 1900369967783346405
+    - rid: 1900369967783346406
+    - rid: 1900369967783346407
+    - rid: 1900369967783346408
+    executes:
+      executionList: []
+    id: -271867021
+    viewPosition: {x: -114.4, y: -338.4, z: 0}
+    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+    haveValidGraphId: 1
+    previewNode:
+      rid: -2
+    previewSelected: 0
+    multipleSelectionWarning: Multiple Graph Nodes Selected!
+    editInPrefabModeWarning: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1900369967783346255
+      type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: ca56ebc6-ec2f-4e6d-95da-78925d4c478f
+        printDebugLog: 1
+        position: {x: -44, y: 47}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346257
+        - rid: 1900369967783346256
+        - rid: 1900369967783346403
+        - rid: 1900369967783346401
+        - rid: 1900369967783346366
+        parent:
+          rid: -2
+        parents: []
+        drawGizmos: 0
+    - rid: 1900369967783346256
+      type: {class: CollisionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 138158b1f9cf7694fbc01b2a996d0397
+        printDebugLog: 1
+        position: {x: 106, y: 205}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346263
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346255
+        drawGizmos: 0
+        triggerType: 11
+        specificCollision: []
+        matchInfo:
+          specificNames: []
+          excludeTags: []
+          excludeLayers: []
+          onlyTags:
+          - Player
+          onlyLayers: []
+          inOutDetection: 0
+          leftToRight: 1
+          rightToLeft: 1
+          topToBottom: 1
+          bottomToTop: 1
+          uniqueDetection: 0
+          dirty: 0
+        interactorVariable: {fileID: 0}
+    - rid: 1900369967783346257
+      type: {class: RunnerTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: e114f729ea3eac648950da86c53b131d
+        printDebugLog: 1
+        position: {x: -194, y: 205}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346267
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346255
+        drawGizmos: 0
+        triggerType: 200
+    - rid: 1900369967783346258
+      type: {class: YesConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7f527968435d6c34ca983c3bdba0c28a
+        printDebugLog: 1
+        position: {x: -194, y: 449}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346259
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346267
+        drawGizmos: 0
+    - rid: 1900369967783346259
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 9ccb0af8a5bf5ad4c9aa7d7abfa7fcf8
+        printDebugLog: 1
+        position: {x: -194, y: 571}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346258
+        drawGizmos: 0
+        triggerNode: 138158b1f9cf7694fbc01b2a996d0397
+        executionType: 11
+    - rid: 1900369967783346261
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 142f41b9cb087924c8472418375ec608
+        printDebugLog: 1
+        position: {x: 701.4, y: 571.00006}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346365
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346303
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: You win the challenge!
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369967783346262
+      type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: c6e307b3682a36a42ae6b6f4ee6a42c0
+        printDebugLog: 1
+        position: {x: 701.4, y: 327}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346303
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346366
+        drawGizmos: 0
+        variableBehaviour:
+          variable: {fileID: 11400000, guid: 550a69fb554d9ca4d974767dbdc0e164, type: 2}
+          type: 1
+          condition: 0
+          check: 0
+          number:
+            dirty: 0
+            floatValue: -1
+            variableValue: {fileID: 0}
+            type: 0
+          number2:
+            dirty: 0
+            floatValue: 0
+            variableValue: {fileID: 0}
+            type: 0
+          message:
+            dirty: 0
+            stringValue: 
+            variableValue: {fileID: 0}
+            type: 0
+          sceneObject:
+            dirty: 0
+            objectValue:
+              type: 0
+              gameObject: {fileID: 0}
+              audioMixer: {fileID: 0}
+              material: {fileID: 0}
+              sprite: {fileID: 0}
+              mesh: {fileID: 0}
+              scriptableObject: {fileID: 0}
+              component: {fileID: 0}
+              showType: 1
+              showAsNodeProperty: 0
+              displayName: 
+              dirty: 0
+            variableValue: {fileID: 0}
+            type: 0
+          character: {fileID: 0}
+          typeChanged: 0
+    - rid: 1900369967783346263
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 1c3b58b582a192f45a8c9e9e62e43668
+        printDebugLog: 1
+        position: {x: 106, y: 327}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346264
+        - rid: 1900369967783346266
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346256
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: a9b80e5c6d997e04184f838a41224716, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 0
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 0
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1900369967783346264
+      type: {class: YesConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: cf78c6ef9a43aa14fa6506890f39829a
+        printDebugLog: 1
+        position: {x: 31, y: 449}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346265
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346263
+        drawGizmos: 0
+    - rid: 1900369967783346265
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7eaeeccad9f53644881d33963b1e9168
+        printDebugLog: 1
+        position: {x: 31, y: 571}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346264
+        drawGizmos: 0
+        triggerNode: 138158b1f9cf7694fbc01b2a996d0397
+        executionType: 11
+    - rid: 1900369967783346266
+      type: {class: NoConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 0c261fe2bc5c6564cad729fb0ae0982a
+        printDebugLog: 1
+        position: {x: 181, y: 449}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346402
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346263
+        drawGizmos: 0
+    - rid: 1900369967783346267
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: a6ce49c9e5f49e746a79c811dcff3101
+        printDebugLog: 1
+        position: {x: -194, y: 327}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346258
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346257
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: a9b80e5c6d997e04184f838a41224716, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 0
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 0
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1900369967783346303
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 9b7cfd9e59911b54583ef1a7c51a4c6b
+        printDebugLog: 1
+        position: {x: 701.4, y: 449.00006}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346261
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346262
+        drawGizmos: 0
+        executionType: 41
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: a9b80e5c6d997e04184f838a41224716, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 1
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 1
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 1
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 0
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1900369967783346365
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 5027c3bf881e87d4d8711c63f991fc89
+        printDebugLog: 1
+        position: {x: 701.4, y: 693.00006}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346384
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346261
+        drawGizmos: 0
+        executionType: 1000
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: You win the challenge!
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 1900369967783346366
+      type: {class: ActionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7b58eb35be5e0c941a64e5cd67b05530
+        printDebugLog: 1
+        position: {x: 701.4, y: 205.00003}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346262
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346255
+        drawGizmos: 0
+        actionName: {fileID: 11400000, guid: 66ea6b2d72bca42548b5bdac0010f3dd, type: 2}
+    - rid: 1900369967783346367
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7325a086155c5e24a89c9e56c87c6eac
+        printDebugLog: 1
+        position: {x: 551.00006, y: 570.99994}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346408
+        drawGizmos: 0
+        triggerNode: 7b58eb35be5e0c941a64e5cd67b05530
+        executionType: 50
+    - rid: 1900369967783346384
+      type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: ece0794acfdceb745bc93df6f839cf76
+        printDebugLog: 1
+        position: {x: 701.4, y: 815}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346365
+        drawGizmos: 0
+        variableBehaviour:
+          variable: {fileID: 11400000, guid: 550a69fb554d9ca4d974767dbdc0e164, type: 2}
+          type: 1
+          condition: 0
+          check: 0
+          number:
+            dirty: 0
+            floatValue: 1
+            variableValue: {fileID: 0}
+            type: 0
+          number2:
+            dirty: 0
+            floatValue: 0
+            variableValue: {fileID: 0}
+            type: 0
+          message:
+            dirty: 0
+            stringValue: 
+            variableValue: {fileID: 0}
+            type: 0
+          sceneObject:
+            dirty: 0
+            objectValue:
+              type: 0
+              gameObject: {fileID: 0}
+              audioMixer: {fileID: 0}
+              material: {fileID: 0}
+              sprite: {fileID: 0}
+              mesh: {fileID: 0}
+              scriptableObject: {fileID: 0}
+              component: {fileID: 0}
+              showType: 1
+              showAsNodeProperty: 0
+              displayName: 
+              dirty: 0
+            variableValue: {fileID: 0}
+            type: 0
+          character: {fileID: 0}
+          typeChanged: 0
+    - rid: 1900369967783346401
+      type: {class: InputTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 0
+        guid: cb23ae1f4e1db7440a65330694f6b14f
+        printDebugLog: 1
+        position: {x: 551, y: 205.00003}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346405
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346255
+        drawGizmos: 0
+        triggerType: 61
+        inputAction: {fileID: -944628639613478452, guid: 74db26165b23a41cc92915c5cc8371ba,
+          type: 3}
+        inputName: Use
+    - rid: 1900369967783346402
+      type: {class: ActionBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 2e754792d59d8b94f89136ac374c1c59
+        printDebugLog: 1
+        position: {x: 181, y: 571.0001}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346407
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346266
+        drawGizmos: 0
+        executionType: 10
+        graph:
+          dirty: 0
+          objectValue:
+            type: 4900
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 11400000, guid: bcb388ec9fb33504d96bda8b06d9237d,
+            type: 2}
+          type: 1
+        character:
+          dirty: 0
+          objectValue:
+            type: 5500
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        targetAim: {fileID: 0}
+        stamina: {fileID: 0}
+        attackSkill: {fileID: 0}
+        actionName: {fileID: 11400000, guid: 0e314cfefca90684ea907838227351fc, type: 2}
+    - rid: 1900369967783346403
+      type: {class: CollisionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: c2abb18ff53a6484da8d37c6bab5c71d
+        printDebugLog: 1
+        position: {x: 331.00006, y: 205.00003}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346404
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346255
+        drawGizmos: 0
+        triggerType: 12
+        specificCollision: []
+        matchInfo:
+          specificNames: []
+          excludeTags: []
+          excludeLayers: []
+          onlyTags:
+          - Player
+          onlyLayers: []
+          inOutDetection: 0
+          leftToRight: 1
+          rightToLeft: 1
+          topToBottom: 1
+          bottomToTop: 1
+          uniqueDetection: 0
+          dirty: 0
+        interactorVariable: {fileID: 0}
+    - rid: 1900369967783346404
+      type: {class: ActionBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 878b52aa8869b74479e1e7abe6e3694f
+        printDebugLog: 1
+        position: {x: 331.00006, y: 327.00003}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346406
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346403
+        drawGizmos: 0
+        executionType: 10
+        graph:
+          dirty: 0
+          objectValue:
+            type: 4900
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 11400000, guid: bcb388ec9fb33504d96bda8b06d9237d,
+            type: 2}
+          type: 1
+        character:
+          dirty: 0
+          objectValue:
+            type: 5500
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        targetAim: {fileID: 0}
+        stamina: {fileID: 0}
+        attackSkill: {fileID: 0}
+        actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1900369967783346405
+      type: {class: ActionBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7c3d0caec3202b54ebd6f28f2bf228cb
+        printDebugLog: 1
+        position: {x: 551.0001, y: 327.00003}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346408
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346401
+        drawGizmos: 0
+        executionType: 10
+        graph:
+          dirty: 0
+          objectValue:
+            type: 4900
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 11400000, guid: bcb388ec9fb33504d96bda8b06d9237d,
+            type: 2}
+          type: 1
+        character:
+          dirty: 0
+          objectValue:
+            type: 5500
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        targetAim: {fileID: 0}
+        stamina: {fileID: 0}
+        attackSkill: {fileID: 0}
+        actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1900369967783346406
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: c9c9d48b20e247d4f8b876cd82b9fa6b
+        printDebugLog: 1
+        position: {x: 331.00006, y: 449.00003}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346404
+        drawGizmos: 0
+        triggerNode: cb23ae1f4e1db7440a65330694f6b14f
+        executionType: 11
+    - rid: 1900369967783346407
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 06fc385792a557440972b98f9f8db5b7
+        printDebugLog: 1
+        position: {x: 180.99997, y: 693}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346402
+        drawGizmos: 0
+        triggerNode: cb23ae1f4e1db7440a65330694f6b14f
+        executionType: 10
+    - rid: 1900369967783346408
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 997e391b05269ff4c80d3e0f345fdf12
+        printDebugLog: 1
+        position: {x: 551.00006, y: 449.00012}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346367
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346405
+        drawGizmos: 0
+        triggerNode: cb23ae1f4e1db7440a65330694f6b14f
+        executionType: 11
+--- !u!1001 &3865369853502358358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 644821680059409393, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_Name
+      value: KudaKepangMaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3194457712341092942, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_Speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069931433654179935, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ee6abb1135164941a870ce7550918fa, type: 2}
+    - target: {fileID: 7786729998503170175, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: graph.previewNode
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786729998503170175, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      propertyPath: graph.previewSelected
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1225233480014847545}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a6a98ee5f2cd3743b0e098aa794e49e, type: 3}
+--- !u!4 &3899413781630564893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 268260265724295499, guid: 5a6a98ee5f2cd3743b0e098aa794e49e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3865369853502358358}
+  m_PrefabAsset: {fileID: 0}
