@@ -3878,7 +3878,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117202095}
-  - component: {fileID: 117202096}
   m_Layer: 0
   m_Name: SoundEffect
   m_TagString: Untagged
@@ -3902,25 +3901,6 @@ Transform:
   - {fileID: 1899040555}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &117202096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117202094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c065cbf7f7f54bc4af828bd6a8a2a4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showHints: 0
-  audioSource: {fileID: 1899040554}
-  audioTags:
-    name: Unit Flags
-    tagRaw: 0
-    data: {fileID: 0}
-    dirty: 0
 --- !u!1001 &118306257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14587,20 +14567,24 @@ MonoBehaviour:
     - rid: 1851010444251365429
     - rid: 1851010444251365430
     - rid: 1851010444251365431
-    - rid: 1851010444251365432
     - rid: 1851010444251365440
     - rid: 171407871235850248
     - rid: 171407871235850249
+    - rid: 1308189135591964677
+    - rid: 1308189135591964678
+    - rid: 1308189135591964679
+    - rid: 1308189135591964680
+    - rid: 1308189135591964681
     executes:
       executionList: []
     id: 602671385
-    viewPosition: {x: 216, y: -238, z: 0}
-    viewScale: {x: 1.15, y: 1.15, z: 1}
+    viewPosition: {x: 307, y: -95, z: 0}
+    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
     previewSelected: 0
-    multipleSelectionWarning: Multiple Dialog Tree selected!
+    multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
     version: 2
@@ -14715,6 +14699,180 @@ MonoBehaviour:
         stamina: {fileID: 0}
         attackSkill: {fileID: 0}
         actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1308189135591964677
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 6993fd423e401cc4ebfdd0f6017713df
+        printDebugLog: 1
+        position: {x: 302.99994, y: 419.99997}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964678
+        - rid: 1308189135591964680
+        parent:
+          rid: -2
+        parents:
+        - rid: 1851010444251365440
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: 2041f5ab88400ef4bae9d9d7c51f8903, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 0
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 1
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 1
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1308189135591964678
+      type: {class: YesConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: b6d31bc34650c1648b256ffd3ae814ba
+        printDebugLog: 1
+        position: {x: 195.99991, y: 577}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964679
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964677
+        drawGizmos: 0
+    - rid: 1308189135591964679
+      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 0ee0b16c42494ac4a8a0fcc595be5340
+        printDebugLog: 1
+        position: {x: 194.99988, y: 720}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964678
+        drawGizmos: 0
+        sceneName: Assets/Scenes/MainHall.unity
+        additive: 0
+    - rid: 1308189135591964680
+      type: {class: NoConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 270d12fd4001bac48a8e691093ade112
+        printDebugLog: 1
+        position: {x: 409.99994, y: 577}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964681
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964677
+        drawGizmos: 0
+    - rid: 1308189135591964681
+      type: {class: AudioBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: ae6bc09e9de8cbb429f337c1b0b33d6b
+        printDebugLog: 1
+        position: {x: 410.99994, y: 720}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964680
+        drawGizmos: 0
+        executionType: 102
+        audioController:
+          dirty: 0
+          objectValue:
+            type: 5601
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 1899040556}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        clip: {fileID: 0}
+        loop: 0
+        number1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        number2:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
     - rid: 1851010444251365426
       type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -14852,23 +15010,6 @@ MonoBehaviour:
         drawGizmos: 0
         triggerNode: 7b72b87b387db954ea43acebe1996fee
         executionType: 11
-    - rid: 1851010444251365432
-      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: b3adde5c09f65834282e1c2f4eecbe07
-        printDebugLog: 1
-        position: {x: 303, y: 412}
-        dirty: 0
-        forceRepaint: 0
-        children: []
-        parent:
-          rid: -2
-        parents:
-        - rid: 1851010444251365440
-        drawGizmos: 0
-        sceneName: Assets/Scenes/MainHall.unity
-        additive: 0
     - rid: 1851010444251365440
       type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -14879,7 +15020,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1851010444251365432
+        - rid: 1308189135591964677
         parent:
           rid: -2
         parents:
@@ -15628,7 +15769,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &658239023 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
     type: 3}
   m_PrefabInstance: {fileID: 1212661453}
   m_PrefabAsset: {fileID: 0}
@@ -16094,7 +16235,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &696800109 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
     type: 3}
   m_PrefabInstance: {fileID: 1671625802}
   m_PrefabAsset: {fileID: 0}
@@ -16573,66 +16714,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397725098}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.156969
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.1658401
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 3.059187
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.6515623
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.6515622
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.27471197
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.27471194
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45.723
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: 919132149155446097, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_Name
-      value: DoorWay6
+      value: DoorWay6FBX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9608883d7c54e9c478231858769f702c, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 328e2447925699242b141c94075406c1, type: 3}
 --- !u!1 &741245431
 GameObject:
   m_ObjectHideFlags: 0
@@ -20114,7 +20255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &942684876 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
     type: 3}
   m_PrefabInstance: {fileID: 733188620}
   m_PrefabAsset: {fileID: 0}
@@ -25479,66 +25620,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397725098}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.533033
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.1664544
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -17.580814
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: 919132149155446097, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_Name
-      value: SmallDoor2
+      value: SmallDoor2FBX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8148ec6aab81e0946a7b82b1a0cb918e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 035cebf6bdc1c6b4f9747940052614da, type: 3}
 --- !u!1 &1224164705
 GameObject:
   m_ObjectHideFlags: 0
@@ -26437,7 +26578,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.35}
 --- !u!4 &1275383730 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
     type: 3}
   m_PrefabInstance: {fileID: 2092279784}
   m_PrefabAsset: {fileID: 0}
@@ -30639,15 +30780,19 @@ MonoBehaviour:
     - rid: 1851010444251365429
     - rid: 1851010444251365430
     - rid: 1851010444251365431
-    - rid: 1851010444251365432
     - rid: 1851010444251365440
     - rid: 171407871235850250
     - rid: 171407871235850251
+    - rid: 1308189135591964682
+    - rid: 1308189135591964683
+    - rid: 1308189135591964684
+    - rid: 1308189135591964685
+    - rid: 1308189135591964686
     executes:
       executionList: []
     id: 1493168193
-    viewPosition: {x: 177, y: -277, z: 0}
-    viewScale: {x: 1.15, y: 1.15, z: 1}
+    viewPosition: {x: 339, y: -97, z: 0}
+    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -30767,6 +30912,180 @@ MonoBehaviour:
         stamina: {fileID: 0}
         attackSkill: {fileID: 0}
         actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1308189135591964682
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 3f16640e6213dae41a6216320e1393e4
+        printDebugLog: 1
+        position: {x: 303.00006, y: 423.99997}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964683
+        - rid: 1308189135591964685
+        parent:
+          rid: -2
+        parents:
+        - rid: 1851010444251365440
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: 2041f5ab88400ef4bae9d9d7c51f8903, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 0
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 1
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 1
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1308189135591964683
+      type: {class: YesConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: fbf278f3b74e49c4fa331b298774184e
+        printDebugLog: 1
+        position: {x: 196.00009, y: 581}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964684
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964682
+        drawGizmos: 0
+    - rid: 1308189135591964684
+      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 64f9a4ae414b3c9488c6022439eb9651
+        printDebugLog: 1
+        position: {x: 195.00006, y: 724}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964683
+        drawGizmos: 0
+        sceneName: Assets/Scenes/MainHall.unity
+        additive: 0
+    - rid: 1308189135591964685
+      type: {class: NoConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: b0403fbd099a7274fab44927c8872a4c
+        printDebugLog: 1
+        position: {x: 410.00012, y: 581}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964686
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964682
+        drawGizmos: 0
+    - rid: 1308189135591964686
+      type: {class: AudioBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 4e017210bf5f47a4ca5422acb804845a
+        printDebugLog: 1
+        position: {x: 411.00006, y: 724}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964685
+        drawGizmos: 0
+        executionType: 102
+        audioController:
+          dirty: 0
+          objectValue:
+            type: 5601
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 1899040556}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        clip: {fileID: 0}
+        loop: 0
+        number1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        number2:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
     - rid: 1851010444251365426
       type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -30904,23 +31223,6 @@ MonoBehaviour:
         drawGizmos: 0
         triggerNode: 7b72b87b387db954ea43acebe1996fee
         executionType: 11
-    - rid: 1851010444251365432
-      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: b3adde5c09f65834282e1c2f4eecbe07
-        printDebugLog: 1
-        position: {x: 303, y: 412}
-        dirty: 0
-        forceRepaint: 0
-        children: []
-        parent:
-          rid: -2
-        parents:
-        - rid: 1851010444251365440
-        drawGizmos: 0
-        sceneName: Assets/Scenes/MainHall.unity
-        additive: 0
     - rid: 1851010444251365440
       type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -30931,7 +31233,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1851010444251365432
+        - rid: 1308189135591964682
         parent:
           rid: -2
         parents:
@@ -34540,15 +34842,19 @@ MonoBehaviour:
     - rid: 1851010444251365429
     - rid: 1851010444251365430
     - rid: 1851010444251365431
-    - rid: 1851010444251365432
     - rid: 1851010444251365440
     - rid: 171407871235850246
     - rid: 171407871235850247
     - rid: 6866703620955963688
+    - rid: 1308189135591964672
+    - rid: 1308189135591964673
+    - rid: 1308189135591964674
+    - rid: 1308189135591964675
+    - rid: 1308189135591964676
     executes:
       executionList: []
     id: 1616443782
-    viewPosition: {x: 343, y: 38, z: 0}
+    viewPosition: {x: 355, y: -74, z: 0}
     viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -34670,6 +34976,180 @@ MonoBehaviour:
         stamina: {fileID: 0}
         attackSkill: {fileID: 0}
         actionName: {fileID: 11400000, guid: fc2f8a08d070e3f4fbdf7e9337a64f4e, type: 2}
+    - rid: 1308189135591964672
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: e532c262f1fe11a4382876f8eb189fb0
+        printDebugLog: 1
+        position: {x: 302.99997, y: 440.99997}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964673
+        - rid: 1308189135591964675
+        parent:
+          rid: -2
+        parents:
+        - rid: 1851010444251365440
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: 2041f5ab88400ef4bae9d9d7c51f8903, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 0
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 1
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 1
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
+    - rid: 1308189135591964673
+      type: {class: YesConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 40ca1ab9a31ca4d4fb6f986fada4aaec
+        printDebugLog: 1
+        position: {x: 195.99997, y: 598}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964674
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964672
+        drawGizmos: 0
+    - rid: 1308189135591964674
+      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 42230720224021e45bdeb5676f3c9dad
+        printDebugLog: 1
+        position: {x: 194.99997, y: 741}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964673
+        drawGizmos: 0
+        sceneName: Assets/Scenes/KudaKepangHall.unity
+        additive: 0
+    - rid: 1308189135591964675
+      type: {class: NoConditionNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: d933fcaf18b558043850c0dbd6775b71
+        printDebugLog: 1
+        position: {x: 409.9999, y: 598}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1308189135591964676
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964672
+        drawGizmos: 0
+    - rid: 1308189135591964676
+      type: {class: AudioBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 7017c45d663b5f34791d9e60c82c4ba9
+        printDebugLog: 1
+        position: {x: 410.9999, y: 741}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1308189135591964675
+        drawGizmos: 0
+        executionType: 102
+        audioController:
+          dirty: 0
+          objectValue:
+            type: 5601
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 1899040556}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        clip: {fileID: 0}
+        loop: 0
+        number1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        number2:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
     - rid: 1851010444251365426
       type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -34807,23 +35287,6 @@ MonoBehaviour:
         drawGizmos: 0
         triggerNode: 7b72b87b387db954ea43acebe1996fee
         executionType: 11
-    - rid: 1851010444251365432
-      type: {class: SceneBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: b3adde5c09f65834282e1c2f4eecbe07
-        printDebugLog: 1
-        position: {x: 303, y: 412}
-        dirty: 0
-        forceRepaint: 0
-        children: []
-        parent:
-          rid: -2
-        parents:
-        - rid: 1851010444251365440
-        drawGizmos: 0
-        sceneName: Assets/Scenes/KudaKepangHall.unity
-        additive: 0
     - rid: 1851010444251365440
       type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -34834,7 +35297,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1851010444251365432
+        - rid: 1308189135591964672
         parent:
           rid: -2
         parents:
@@ -37490,66 +37953,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397725098}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.833033
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.1664544
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 6.2891865
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: -8679921383154817045, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8148ec6aab81e0946a7b82b1a0cb918e,
+    - target: {fileID: 919132149155446097, guid: 035cebf6bdc1c6b4f9747940052614da,
         type: 3}
       propertyPath: m_Name
-      value: SmallDoor5
+      value: SmallDoor5FBX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8148ec6aab81e0946a7b82b1a0cb918e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 035cebf6bdc1c6b4f9747940052614da, type: 3}
 --- !u!1001 &1674305886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39214,8 +39677,8 @@ MonoBehaviour:
     executes:
       executionList: []
     id: 1795843812
-    viewPosition: {x: 249, y: -162, z: 0}
-    viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+    viewPosition: {x: 373, y: -81, z: 0}
+    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -39682,7 +40145,7 @@ MonoBehaviour:
             sprite: {fileID: 0}
             mesh: {fileID: 0}
             scriptableObject: {fileID: 0}
-            component: {fileID: 117202096}
+            component: {fileID: 1899040556}
             showType: 0
             showAsNodeProperty: 1
             displayName: 
@@ -42208,6 +42671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899040555}
   - component: {fileID: 1899040554}
+  - component: {fileID: 1899040556}
   m_Layer: 0
   m_Name: Locked Door
   m_TagString: Untagged
@@ -42326,6 +42790,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 117202095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899040556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899040553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c065cbf7f7f54bc4af828bd6a8a2a4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHints: 0
+  audioSource: {fileID: 1899040554}
+  audioTags:
+    name: Unit Flags
+    tagRaw: 0
+    data: {fileID: 0}
+    dirty: 0
 --- !u!1001 &1912785503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48462,66 +48945,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397725098}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7069683
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.1658401
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -14.920814
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.65161633
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.65161633
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.2745836
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.2745836
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: -8679921383154817045, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45.7
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9608883d7c54e9c478231858769f702c,
+    - target: {fileID: 919132149155446097, guid: 328e2447925699242b141c94075406c1,
         type: 3}
       propertyPath: m_Name
-      value: DoorWay3
+      value: DoorWay3FBX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9608883d7c54e9c478231858769f702c, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 328e2447925699242b141c94075406c1, type: 3}
 --- !u!1 &2098512690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e0602e600dccf7418777f381a8dd7dc,
