@@ -101,15 +101,17 @@ MonoBehaviour:
     - rid: 1900369967783346319
     - rid: 1900369967783346320
     - rid: 1900369967783346385
+    - rid: 6019889451191500874
+    - rid: 6019889451191500875
     executes:
       executionList: []
     id: -2102865793
-    viewPosition: {x: -526.4, y: -360, z: 0}
-    viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+    viewPosition: {x: -251.2, y: -108.8, z: 0}
+    viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 1900369967783346210
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -177,7 +179,7 @@ MonoBehaviour:
         enabled: 1
         guid: 6d0ff10bc23209840a1ce1e2f033124e
         printDebugLog: 1
-        position: {x: 730.0326, y: 585}
+        position: {x: 730.4, y: 582.0016}
         dirty: 0
         forceRepaint: 0
         children:
@@ -516,7 +518,7 @@ MonoBehaviour:
         enabled: 1
         guid: e53f01372c049d8489ac2e8bcf9328ee
         printDebugLog: 1
-        position: {x: 1180, y: 463.00003}
+        position: {x: 1182.7985, y: 486.98654}
         dirty: 0
         forceRepaint: 0
         children:
@@ -532,7 +534,7 @@ MonoBehaviour:
         enabled: 1
         guid: 401974de334052b469aaae419386eeb4
         printDebugLog: 1
-        position: {x: 1180, y: 585}
+        position: {x: 1182.7985, y: 608.5865}
         dirty: 0
         forceRepaint: 0
         children: []
@@ -573,7 +575,8 @@ MonoBehaviour:
         position: {x: 1030, y: 707.0001}
         dirty: 0
         forceRepaint: 0
-        children: []
+        children:
+        - rid: 6019889451191500874
         parent:
           rid: -2
         parents:
@@ -620,6 +623,99 @@ MonoBehaviour:
           floatValue: 0
           variableValue: {fileID: 0}
           type: 0
+    - rid: 6019889451191500874
+      type: {class: WaitBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 8e1dd1f0ef1821947a36e6ea811e1ad9
+        printDebugLog: 1
+        position: {x: 1029.914, y: 832.36597}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 6019889451191500875
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346385
+        drawGizmos: 0
+        time:
+          dirty: 0
+          floatValue: 3
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 6019889451191500875
+      type: {class: GameObjectBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 1669f0b98c89dba42bbbf7469b906cf0
+        printDebugLog: 1
+        position: {x: 1031.988, y: 955.3782}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 6019889451191500874
+        drawGizmos: 0
+        executionType: 11
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 644821680059409393}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        component: {fileID: 0}
+        location:
+          dirty: 0
+          objectValue:
+            type: 1000
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: GameObjectLocation
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        parentTransform:
+          dirty: 0
+          objectValue:
+            type: 1000
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: GameObjectParent
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        actionName: {fileID: 0}
+        objectVariable: {fileID: 0}
+        uiLayer: 0
+        paramBool: 0
 --- !u!1 &1435482840677280841
 GameObject:
   m_ObjectHideFlags: 0
