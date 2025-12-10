@@ -8374,6 +8374,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 735065982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &758538499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758538500}
+  m_Layer: 0
+  m_Name: GameStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &758538500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758538499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0261042, y: 2.170042, z: -41.930073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &760102633
 GameObject:
   m_ObjectHideFlags: 0
@@ -21802,10 +21833,11 @@ MonoBehaviour:
     - rid: 985602319358886443
     - rid: 985602319358886444
     - rid: 985602319358886448
+    - rid: 985602451994574859
     executes:
       executionList: []
     id: 1637243672
-    viewPosition: {x: 351.2, y: -718.4, z: 0}
+    viewPosition: {x: 302.4, y: -630.4, z: 0}
     viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -21843,7 +21875,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 985602319358886437
+        - rid: 985602319358886438
         parent:
           rid: -2
         parents:
@@ -21871,15 +21903,15 @@ MonoBehaviour:
         enabled: 1
         guid: c8bb52e94f931014d82651915f44fedc
         printDebugLog: 1
-        position: {x: 0, y: 244.80003}
+        position: {x: 1.6000061, y: 489.6}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 985602319358886438
+        - rid: 985602319358886441
         parent:
           rid: -2
         parents:
-        - rid: 985602319358886436
+        - rid: 985602319358886439
         drawGizmos: 0
         unityEvent:
           m_PersistentCalls:
@@ -21903,7 +21935,7 @@ MonoBehaviour:
         enabled: 1
         guid: 8a33077e6e92c6842834b4e5f48d9f15
         printDebugLog: 1
-        position: {x: -0.000030517578, y: 367.2}
+        position: {x: 0.7999878, y: 244.80002}
         dirty: 0
         forceRepaint: 0
         children:
@@ -21911,7 +21943,7 @@ MonoBehaviour:
         parent:
           rid: -2
         parents:
-        - rid: 985602319358886437
+        - rid: 985602319358886436
         drawGizmos: 0
         variableBehaviour:
           variable: {fileID: 11400000, guid: 41a431e79e286b1459d772677094c52b, type: 2}
@@ -21958,11 +21990,11 @@ MonoBehaviour:
         enabled: 1
         guid: 735107079f3280447a906e566fa0e6c2
         printDebugLog: 1
-        position: {x: 0, y: 489.6}
+        position: {x: 0.7999878, y: 367.2}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 985602319358886441
+        - rid: 985602319358886437
         parent:
           rid: -2
         parents:
@@ -21996,7 +22028,7 @@ MonoBehaviour:
         parent:
           rid: -2
         parents:
-        - rid: 985602319358886439
+        - rid: 985602319358886437
         drawGizmos: 0
         executionType: 10
         actor:
@@ -22243,6 +22275,83 @@ MonoBehaviour:
         drawGizmos: 0
         sceneName: Assets/Scenes/EndGame.unity
         additive: 0
+    - rid: 985602451994574859
+      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: d58f17c3c03ba294e8c619f6ed10f494
+        printDebugLog: 1
+        position: {x: 300.8, y: 480.80002}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents: []
+        drawGizmos: 0
+        executionType: 63
+        inventoryName:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
+            type: 2}
+          type: 1
+        item: {fileID: 11400000, guid: 2041f5ab88400ef4bae9d9d7c51f8903, type: 2}
+        itemType: 0
+        itemCache: 
+        itemVariable:
+          dirty: 1
+          objectValue:
+            type: 6030
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 2
+        size:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramNumber1:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+        paramVariable: {fileID: 0}
+        invBehaviour: {fileID: 0}
+        invBehaviour2: {fileID: 0}
+        autoCreate: 0
+        paramStr1:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr2:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramStr3:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        paramWord1: {fileID: 0}
+        paramBool1: 0
+        invTags:
+          name: Tags
+          tagRaw: 0
+          data: {fileID: 0}
+          dirty: 0
 --- !u!1 &1650590979
 GameObject:
   m_ObjectHideFlags: 0
@@ -27323,6 +27432,16 @@ PrefabInstance:
       propertyPath: graph.id
       value: 669687844
       objectReference: {fileID: 0}
+    - target: {fileID: 7206359791588887943, guid: 908c8914431034cd49e0df295a10a110,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206359791588887943, guid: 908c8914431034cd49e0df295a10a110,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.043
+      objectReference: {fileID: 0}
     - target: {fileID: 8894552292121995708, guid: 908c8914431034cd49e0df295a10a110,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27393,3 +27512,4 @@ SceneRoots:
   - {fileID: 6329621846350407512}
   - {fileID: 1834109633}
   - {fileID: 1241955196}
+  - {fileID: 758538500}
