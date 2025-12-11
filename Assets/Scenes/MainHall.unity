@@ -6137,11 +6137,10 @@ MonoBehaviour:
     - rid: 985602457078857905
     - rid: 985602457078857906
     - rid: 985602457078857907
-    - rid: 985602478967881742
     executes:
       executionList: []
     id: 625498269
-    viewPosition: {x: 213.6, y: -725.6, z: 0}
+    viewPosition: {x: 138.4, y: -648.8, z: 0}
     viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -6369,7 +6368,6 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 985602478967881742
         - rid: 4491986103259365389
         parent:
           rid: -2
@@ -6452,78 +6450,6 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 1
               m_CallState: 2
-    - rid: 985602478967881742
-      type: {class: GameObjectBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: 6b6a194b0c698ce4c9ab98aaa9af1433
-        printDebugLog: 1
-        position: {x: 0.7999878, y: 979.19995}
-        dirty: 0
-        forceRepaint: 0
-        children: []
-        parent:
-          rid: -2
-        parents:
-        - rid: 985602457078857906
-        drawGizmos: 0
-        executionType: 10
-        gameObject:
-          dirty: 0
-          objectValue:
-            type: 100
-            gameObject: {fileID: 1637243667}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: 
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        component: {fileID: 0}
-        location:
-          dirty: 0
-          objectValue:
-            type: 1000
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: GameObjectLocation
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        parentTransform:
-          dirty: 0
-          objectValue:
-            type: 1000
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: GameObjectParent
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        actionName: {fileID: 0}
-        objectVariable: {fileID: 0}
-        uiLayer: 0
-        paramBool: 0
     - rid: 4491986103259365376
       type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -21880,7 +21806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1637243668
 Transform:
   m_ObjectHideFlags: 0
@@ -22007,12 +21933,13 @@ MonoBehaviour:
     - rid: 985602319358886443
     - rid: 985602319358886444
     - rid: 985602319358886448
-    - rid: 985602451994574859
+    - rid: 985602478967881743
+    - rid: 985602478967881744
     executes:
       executionList: []
     id: 1637243672
-    viewPosition: {x: 188, y: 44, z: 0}
-    viewScale: {x: 1.15, y: 1.15, z: 1}
+    viewPosition: {x: 137.6, y: -327.2, z: 0}
+    viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -22114,6 +22041,7 @@ MonoBehaviour:
         forceRepaint: 0
         children:
         - rid: 985602319358886439
+        - rid: 985602319358886440
         parent:
           rid: -2
         parents:
@@ -22180,13 +22108,15 @@ MonoBehaviour:
         enabled: 1
         guid: b95ba6d15eb8e374fad2d6f045688849
         printDebugLog: 1
-        position: {x: 150.39998, y: 489.59998}
+        position: {x: 150.4, y: 367.2}
         dirty: 0
         forceRepaint: 0
-        children: []
+        children:
+        - rid: 985602478967881743
         parent:
           rid: -2
-        parents: []
+        parents:
+        - rid: 985602319358886438
         drawGizmos: 0
     - rid: 985602319358886441
       type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
@@ -22449,34 +22379,54 @@ MonoBehaviour:
         drawGizmos: 0
         sceneName: Assets/Scenes/EndGame.unity
         additive: 0
-    - rid: 985602451994574859
-      type: {class: InventoryBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+    - rid: 985602478967881743
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
         enabled: 1
-        guid: d58f17c3c03ba294e8c619f6ed10f494
+        guid: e6555a8d1ed306c4f875e8f3a35fb9ce
         printDebugLog: 1
-        position: {x: 300.8, y: 480.80002}
+        position: {x: 150.4, y: 489.6}
         dirty: 0
         forceRepaint: 0
-        children: []
+        children:
+        - rid: 985602478967881744
         parent:
           rid: -2
-        parents: []
+        parents:
+        - rid: 985602319358886440
         drawGizmos: 0
-        executionType: 63
-        inventoryName:
+        executionType: 10
+        actor:
           dirty: 0
           stringValue: 
-          variableValue: {fileID: 11400000, guid: f0ef7441d5af89443a7291def3c5225a,
-            type: 2}
-          type: 1
-        item: {fileID: 11400000, guid: 2041f5ab88400ef4bae9d9d7c51f8903, type: 2}
-        itemType: 0
-        itemCache: 
-        itemVariable:
-          dirty: 1
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
           objectValue:
-            type: 6030
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: I need my paycheck...
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
             gameObject: {fileID: 0}
             audioMixer: {fileID: 0}
             material: {fileID: 0}
@@ -22489,43 +22439,67 @@ MonoBehaviour:
             displayName: 
             dirty: 0
           variableValue: {fileID: 0}
-          type: 2
-        size:
-          dirty: 0
-          floatValue: 0
-          variableValue: {fileID: 0}
           type: 0
-        paramNumber1:
-          dirty: 0
-          floatValue: 0
-          variableValue: {fileID: 0}
-          type: 0
-        paramVariable: {fileID: 0}
-        invBehaviour: {fileID: 0}
-        invBehaviour2: {fileID: 0}
-        autoCreate: 0
-        paramStr1:
+    - rid: 985602478967881744
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 28e3fa931fc44ff4fb27e9302def681e
+        printDebugLog: 1
+        position: {x: 150.4, y: 612}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 985602478967881743
+        drawGizmos: 0
+        executionType: 1000
+        actor:
           dirty: 0
           stringValue: 
           variableValue: {fileID: 0}
           type: 0
-        paramStr2:
+        sceneObject:
           dirty: 0
-          stringValue: 
+          objectValue:
+            type: 1000
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Spawn Location
+            dirty: 0
           variableValue: {fileID: 0}
           type: 0
-        paramStr3:
+        dialog:
           dirty: 0
-          stringValue: 
+          stringValue: I need my paycheck...
           variableValue: {fileID: 0}
           type: 0
-        paramWord1: {fileID: 0}
-        paramBool1: 0
-        invTags:
-          name: Tags
-          tagRaw: 0
-          data: {fileID: 0}
+        gameObject:
           dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
 --- !u!1 &1650590979
 GameObject:
   m_ObjectHideFlags: 0
