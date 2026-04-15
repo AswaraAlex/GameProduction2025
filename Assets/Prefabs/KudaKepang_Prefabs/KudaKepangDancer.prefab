@@ -812,15 +812,16 @@ MonoBehaviour:
     - rid: 1900369967783346265
     - rid: 1900369967783346266
     - rid: 1900369967783346267
+    - rid: 5912356904480014347
     executes:
       executionList: []
     id: 508883575
-    viewPosition: {x: 141.6, y: -748, z: 0}
+    viewPosition: {x: 260.8, y: -687.2, z: 0}
     viewScale: {x: 1.3225, y: 1.3225, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: 1900369967783346260
-    previewSelected: 1
+      rid: -2
+    previewSelected: 0
     multipleSelectionWarning: Multiple Dialog Tree selected!
     editInPrefabModeWarning: 
   references:
@@ -933,14 +934,14 @@ MonoBehaviour:
         enabled: 1
         guid: ede95a47c8f0a6b4992a657536987593
         printDebugLog: 1
-        position: {x: 180.80008, y: 815.19995}
+        position: {x: 180.8, y: 937.6}
         dirty: 0
         forceRepaint: 0
         children: []
         parent:
           rid: -2
         parents:
-        - rid: 1900369967783346261
+        - rid: 5912356904480014347
         drawGizmos: 0
         sceneName: Assets/Scenes/NewVersion01/KudaKepangHall.unity
         additive: 0
@@ -954,7 +955,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1900369967783346260
+        - rid: 5912356904480014347
         parent:
           rid: -2
         parents:
@@ -985,7 +986,7 @@ MonoBehaviour:
           type: 0
         dialog:
           dirty: 0
-          stringValue: You lose the challenge, you have to restart again!
+          stringValue: (You blacked out)
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -1268,6 +1269,61 @@ MonoBehaviour:
           tagRaw: 0
           data: {fileID: 0}
           dirty: 0
+    - rid: 5912356904480014347
+      type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: ff7070b647110c04fb947594afd91d55
+        printDebugLog: 1
+        position: {x: 180.80003, y: 815.19995}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369967783346260
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369967783346261
+        drawGizmos: 0
+        variableBehaviour:
+          variable: {fileID: 11400000, guid: 1e8d64f8fb588b04fa104b13a73c1ee7, type: 2}
+          type: 1
+          condition: 0
+          check: 0
+          number:
+            dirty: 0
+            floatValue: 1
+            variableValue: {fileID: 0}
+            type: 0
+          number2:
+            dirty: 0
+            floatValue: 0
+            variableValue: {fileID: 0}
+            type: 0
+          message:
+            dirty: 0
+            stringValue: 
+            variableValue: {fileID: 0}
+            type: 0
+          sceneObject:
+            dirty: 0
+            objectValue:
+              type: 0
+              gameObject: {fileID: 0}
+              audioMixer: {fileID: 0}
+              material: {fileID: 0}
+              sprite: {fileID: 0}
+              mesh: {fileID: 0}
+              scriptableObject: {fileID: 0}
+              component: {fileID: 0}
+              showType: 1
+              showAsNodeProperty: 0
+              displayName: 
+              dirty: 0
+            variableValue: {fileID: 0}
+            type: 0
+          character: {fileID: 0}
+          typeChanged: 1000
 --- !u!1001 &400838440674652806
 PrefabInstance:
   m_ObjectHideFlags: 0
