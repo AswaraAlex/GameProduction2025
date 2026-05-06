@@ -79,7 +79,7 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: 1265855982
-    viewPosition: {x: 388, y: -195, z: 0}
+    viewPosition: {x: 246, y: -74, z: 0}
     viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -495,6 +495,11 @@ MonoBehaviour:
     - rid: 1900369651413811248
     - rid: 1900369651413811294
     - rid: 3849152858475462656
+    - rid: 3897045861178802188
+    - rid: 3897045861178802231
+    - rid: 3897045861178802232
+    - rid: 3897045861178802233
+    - rid: 3897045861178802234
     executes:
       executionList:
       - state: 1
@@ -506,12 +511,12 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: 753155269
-    viewPosition: {x: 370, y: -24, z: 0}
-    viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+    viewPosition: {x: 295, y: -225, z: 0}
+    viewScale: {x: 0.43232757, y: 0.43232757, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 3897045861178802188
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -540,7 +545,7 @@ MonoBehaviour:
         enabled: 1
         guid: b50401cd79e5aaa47a5b538dcd5ea795
         printDebugLog: 1
-        position: {x: -0.000091552734, y: 256}
+        position: {x: 1.9999868, y: 271.85144}
         dirty: 0
         forceRepaint: 0
         children:
@@ -601,14 +606,15 @@ MonoBehaviour:
         enabled: 1
         guid: 7d6745e8773c0104d8e0fc88c958f802
         printDebugLog: 1
-        position: {x: -0.000014781952, y: 676.8681}
+        position: {x: 1.3130053, y: 1224.3649}
         dirty: 0
         forceRepaint: 0
-        children: []
+        children:
+        - rid: 3897045861178802188
         parent:
           rid: -2
         parents:
-        - rid: 3849152858475462656
+        - rid: 3897045861178802233
         drawGizmos: 0
         executionType: 1000
         actor:
@@ -678,7 +684,7 @@ MonoBehaviour:
         enabled: 1
         guid: fb3b94e42bfa25c42b2bd1db7aec811b
         printDebugLog: 1
-        position: {x: 0, y: 387.6405}
+        position: {x: 1.9999868, y: 403.85144}
         dirty: 0
         forceRepaint: 0
         children:
@@ -739,11 +745,11 @@ MonoBehaviour:
         enabled: 1
         guid: 782cd6e747fec904fa5d4537c36bf67f
         printDebugLog: 1
-        position: {x: -0.000015258789, y: 531.087}
+        position: {x: 1.9999868, y: 546.85144}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1900369651413811219
+        - rid: 3897045861178802234
         parent:
           rid: -2
         parents:
@@ -775,6 +781,304 @@ MonoBehaviour:
         dialog:
           dirty: 0
           stringValue: It sounds like....whipping?
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3897045861178802188
+      type: {class: VariableBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 068366037af51774cbfb0ac11a462801
+        printDebugLog: 1
+        position: {x: 1.3130053, y: 1369.365}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 1900369651413811219
+        drawGizmos: 0
+        variableBehaviour:
+          variable: {fileID: 11400000, guid: 550a69fb554d9ca4d974767dbdc0e164, type: 2}
+          type: 1
+          condition: 0
+          check: 0
+          number:
+            dirty: 0
+            floatValue: 1
+            variableValue: {fileID: 0}
+            type: 0
+          number2:
+            dirty: 0
+            floatValue: 0
+            variableValue: {fileID: 0}
+            type: 0
+          message:
+            dirty: 0
+            stringValue: 
+            variableValue: {fileID: 0}
+            type: 0
+          sceneObject:
+            dirty: 0
+            objectValue:
+              type: 0
+              gameObject: {fileID: 0}
+              audioMixer: {fileID: 0}
+              material: {fileID: 0}
+              sprite: {fileID: 0}
+              mesh: {fileID: 0}
+              scriptableObject: {fileID: 0}
+              component: {fileID: 0}
+              showType: 1
+              showAsNodeProperty: 0
+              displayName: 
+              dirty: 0
+            variableValue: {fileID: 0}
+            type: 0
+          character: {fileID: 0}
+          typeChanged: 1000
+    - rid: 3897045861178802231
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 2941cb7cc2a26634597abb265c21448f
+        printDebugLog: 1
+        position: {x: 1.3130053, y: 815.365}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 3897045861178802232
+        parent:
+          rid: -2
+        parents:
+        - rid: 3897045861178802234
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Although...it does sound a bit too real to be a recording..
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3897045861178802232
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: a54478a4d7aa89c4ba6c184c332bc26a
+        printDebugLog: 1
+        position: {x: 1.3130053, y: 958.36505}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 3897045861178802233
+        parent:
+          rid: -2
+        parents:
+        - rid: 3897045861178802231
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: ....
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3897045861178802233
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 16ce737f43502104f928ca9881ef0f5f
+        printDebugLog: 1
+        position: {x: 1.3130053, y: 1095.365}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811219
+        parent:
+          rid: -2
+        parents:
+        - rid: 3897045861178802232
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Ehh probably not.
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3897045861178802234
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: b19a0a8b3fd95164d901cf9fd80063fc
+        printDebugLog: 1
+        position: {x: 1.3130053, y: 683.3649}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 3897045861178802231
+        parent:
+          rid: -2
+        parents:
+        - rid: 3849152858475462656
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: I'm guessing it's an audio problem. nothing that i can't fix.
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -1178,8 +1482,8 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: -369630061
-    viewPosition: {x: 265, y: -100, z: 0}
-    viewScale: {x: 1.15, y: 1.15, z: 1}
+    viewPosition: {x: 351.2, y: -137.6, z: 0}
+    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -1944,6 +2248,7 @@ MonoBehaviour:
     - rid: 1900369651413811294
     - rid: 3849153150934581256
     - rid: 3849153150934581257
+    - rid: 3897045498151567392
     executes:
       executionList:
       - state: 1
@@ -1955,12 +2260,12 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: -1155573865
-    viewPosition: {x: 389, y: -408, z: 0}
-    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
+    viewPosition: {x: 390.4, y: -617.6, z: 0}
+    viewScale: {x: 1.15, y: 1.15, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 1900369651413811219
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -2050,14 +2355,14 @@ MonoBehaviour:
         enabled: 1
         guid: 7d6745e8773c0104d8e0fc88c958f802
         printDebugLog: 1
-        position: {x: -0.000035572055, y: 812.74005}
+        position: {x: -0.0000037815262, y: 874.39996}
         dirty: 0
         forceRepaint: 0
         children: []
         parent:
           rid: -2
         parents:
-        - rid: 3849153150934581256
+        - rid: 3897045498151567392
         drawGizmos: 0
         executionType: 1000
         actor:
@@ -2127,7 +2432,7 @@ MonoBehaviour:
         enabled: 1
         guid: fb3b94e42bfa25c42b2bd1db7aec811b
         printDebugLog: 1
-        position: {x: 0, y: 387.6405}
+        position: {x: -0.000002894194, y: 378.4}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2188,11 +2493,11 @@ MonoBehaviour:
         enabled: 1
         guid: 1e22a867fdd6ad847ac01ec31d1d60ea
         printDebugLog: 1
-        position: {x: -0.000035572055, y: 679.74005}
+        position: {x: -0.000041795814, y: 623.19995}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1900369651413811219
+        - rid: 3897045498151567392
         parent:
           rid: -2
         parents:
@@ -2249,7 +2554,7 @@ MonoBehaviour:
         enabled: 1
         guid: 6667724f5a64ab442bd69427eefedd01
         printDebugLog: 1
-        position: {x: 0, y: 534.7001}
+        position: {x: -0.000002894194, y: 500.80005}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2285,6 +2590,67 @@ MonoBehaviour:
         dialog:
           dirty: 0
           stringValue: .....perfect.
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 3897045498151567392
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 87727fc68e544104180dd0b673e35984
+        printDebugLog: 1
+        position: {x: 0.000008583069, y: 745.6}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 1900369651413811219
+        parent:
+          rid: -2
+        parents:
+        - rid: 3849153150934581256
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: 
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: Time to go reset their positions at the control panel.
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -2381,12 +2747,12 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: 1332422882
-    viewPosition: {x: 315, y: -30, z: 0}
-    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
+    viewPosition: {x: 453.6, y: -216.8, z: 0}
+    viewScale: {x: 1.3225, y: 1.3225, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 1900369651413811219
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -2476,7 +2842,7 @@ MonoBehaviour:
         enabled: 1
         guid: 7d6745e8773c0104d8e0fc88c958f802
         printDebugLog: 1
-        position: {x: -0.000010967255, y: 541.0502}
+        position: {x: -0.0000038725666, y: 525.07214}
         dirty: 0
         forceRepaint: 0
         children: []
@@ -2553,7 +2919,7 @@ MonoBehaviour:
         enabled: 1
         guid: fb3b94e42bfa25c42b2bd1db7aec811b
         printDebugLog: 1
-        position: {x: 0, y: 387.6405}
+        position: {x: -0.0000038725666, y: 378.4}
         dirty: 0
         forceRepaint: 0
         children:
@@ -2588,7 +2954,7 @@ MonoBehaviour:
           type: 0
         dialog:
           dirty: 0
-          stringValue: Let me see what the problem is.
+          stringValue: Can't reset it
           variableValue: {fileID: 0}
           type: 0
         gameObject:
