@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -8320}
+  m_AnchoredPosition: {x: 0, y: -8265.177}
   m_SizeDelta: {x: 1280, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &370855763
@@ -1191,10 +1191,10 @@ RectTransform:
   - {fileID: 370855762}
   m_Father: {fileID: 340709030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924558727
 MonoBehaviour:
@@ -1281,17 +1281,16 @@ MonoBehaviour:
     - rid: 1724496326911590443
     - rid: 1724496326911590444
     - rid: 1724496326911590445
-    - rid: 1724496326911590455
     executes:
       executionList: []
     id: 1026882292
-    viewPosition: {x: 283.33334, y: 17.333334, z: 0}
-    viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+    viewPosition: {x: 329, y: -392, z: 0}
+    viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
     previewSelected: 0
-    multipleSelectionWarning: Multiple Dialog Tree selected!
+    multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
     version: 2
@@ -1448,7 +1447,7 @@ MonoBehaviour:
         enabled: 1
         guid: bea9d6c9acc2dd44db697c28906d6c22
         printDebugLog: 1
-        position: {x: 0, y: 368.66666}
+        position: {x: 0, y: 367}
         dirty: 0
         forceRepaint: 0
         children:
@@ -1521,11 +1520,11 @@ MonoBehaviour:
         enabled: 1
         guid: 694f3c5f9b513d142a344c1b682ff940
         printDebugLog: 1
-        position: {x: 0, y: 492}
+        position: {x: 0, y: 490}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 1724496326911590444
+        - rid: 1900370126729379857
         parent:
           rid: -2
         parents:
@@ -1542,15 +1541,14 @@ MonoBehaviour:
         enabled: 1
         guid: 6c689449a43afc34d9a1331f9c3a8adf
         printDebugLog: 1
-        position: {x: 0, y: 615.3333}
+        position: {x: -172, y: 481}
         dirty: 0
         forceRepaint: 0
         children:
         - rid: 1724496326911590445
         parent:
           rid: -2
-        parents:
-        - rid: 1724496326911590443
+        parents: []
         drawGizmos: 0
         executionType: 11
         gameObject:
@@ -1615,7 +1613,7 @@ MonoBehaviour:
         enabled: 1
         guid: a095e6e384308394985ea0a235df9f70
         printDebugLog: 1
-        position: {x: 0, y: 738.6667}
+        position: {x: -172, y: 603}
         dirty: 0
         forceRepaint: 0
         children: []
@@ -1681,23 +1679,6 @@ MonoBehaviour:
         objectVariable: {fileID: 0}
         uiLayer: 0
         paramBool: 0
-    - rid: 1724496326911590455
-      type: {class: ActionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: 38c4f00455bbceb40abf31bb89b576a0
-        printDebugLog: 1
-        position: {x: 149.99998, y: 123.33333}
-        dirty: 0
-        forceRepaint: 0
-        children:
-        - rid: 1900370126729379857
-        parent:
-          rid: -2
-        parents:
-        - rid: 1900370126729379855
-        drawGizmos: 0
-        actionName: {fileID: 11400000, guid: 2c1171630f31442f0807277ba5886fad, type: 2}
     - rid: 1900370126729379855
       type: {class: RootNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -1709,7 +1690,6 @@ MonoBehaviour:
         forceRepaint: 0
         children:
         - rid: 1900370126729379856
-        - rid: 1724496326911590455
         parent:
           rid: -2
         parents: []
@@ -1737,16 +1717,16 @@ MonoBehaviour:
         enabled: 1
         guid: 8aec3e4eaa16f2e469de2bd58eba50b3
         printDebugLog: 1
-        position: {x: 150, y: 246.66669}
+        position: {x: 0, y: 612}
         dirty: 0
         forceRepaint: 0
         children: []
         parent:
           rid: -2
         parents:
-        - rid: 1724496326911590455
+        - rid: 1724496326911590443
         drawGizmos: 0
-        sceneName: Assets/Scenes/NewVersion01/MainHall.unity
+        sceneName: Assets/Scenes/Loading.unity
         additive: 0
 --- !u!4 &1026882293
 Transform:
