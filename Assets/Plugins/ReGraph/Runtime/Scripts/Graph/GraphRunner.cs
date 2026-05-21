@@ -233,7 +233,7 @@ namespace Reshape.ReGraph
             var execution = graph?.FindExecute(executionId);
             if (execution == null)
             {
-                ReDebug.LogWarning("Graph Warning", "Trigger " + executionId + " re-activation have not found in " + goName);
+                ReDebug.LogWarning("Graph Warning", "Trigger " + executionId + " re-activation have not found in ");
                 return;
             }
 
