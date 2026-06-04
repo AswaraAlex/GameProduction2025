@@ -408,6 +408,13 @@ namespace Reshape.ReGraph
 
             base.OnUnpause(execution);
         }
+        
+        public override bool IsRequireUninit ()
+        {
+            if (executionType is ExecutionType.ShowDialog)
+                return enabled;
+            return false;
+        }
 
         public override bool IsRequireUpdate ()
         {

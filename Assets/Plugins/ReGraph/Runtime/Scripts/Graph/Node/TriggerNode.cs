@@ -196,6 +196,11 @@ namespace Reshape.ReGraph
             return false;
         }
         
+        public override bool IsRequireUninit ()
+        {
+            return false;
+        }
+        
         public override bool IsRequireBegin ()
         {
             return false;
