@@ -194,6 +194,7 @@ namespace Reshape.ReGraph
         public abstract bool IsRequireInit ();
         public abstract bool IsRequireBegin ();
         public abstract bool IsRequirePreUninit ();
+        public abstract bool IsRequireUninit ();
         public abstract bool IsTrigger (TriggerNode.Type type, int paramInt = 0);
     }
 }

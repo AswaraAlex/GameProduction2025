@@ -461,6 +461,13 @@ namespace Reshape.ReGraph
         {
             return enabled;
         }
+        
+        public override bool IsRequireUninit ()
+        {
+            if (executionType is ExecutionType.PlayTween)
+                return enabled;
+            return false;
+        }
 
         private string GetTweeName (GraphExecution execution, int key)
         {

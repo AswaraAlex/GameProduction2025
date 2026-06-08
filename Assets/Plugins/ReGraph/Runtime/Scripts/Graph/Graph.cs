@@ -281,9 +281,11 @@ namespace Reshape.ReGraph
         public void Stop ()
         {
             if (executes != null)
-                for (int i = 0; i < executes.count; i++)
-                    rootNode?.Abort(executes.Get(i));
-            Reset();
+                if (HaveRequireUninit())
+                    for (var i = 0; i < executes.count; i++)
+                        rootNode?.Abort(executes.Get(i));
+            if (HaveRequireInit())
+                Reset();
             terminated = true;
         }
 
@@ -340,6 +342,19 @@ namespace Reshape.ReGraph
             for (int i = 0; i < nodes.Count; i++)
             {
                 if (nodes[i] != null && nodes[i].IsRequirePreUninit())
+                    return true;
+            }
+
+            return false;
+        }
+        
+        public bool HaveRequireUninit ()
+        {
+            if (!isCreated || executes == null)
+                return false;
+            for (int i = 0; i < nodes.Count; i++)
+            {
+                if (nodes[i] != null && nodes[i].IsRequireUninit())
                     return true;
             }
 

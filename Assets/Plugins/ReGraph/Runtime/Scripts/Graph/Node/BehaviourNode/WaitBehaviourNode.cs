@@ -103,6 +103,11 @@ namespace Reshape.ReGraph
         {
             return enabled;
         }
+        
+        public override bool IsRequireUninit ()
+        {
+            return enabled;
+        }
 
 #if UNITY_EDITOR
         private void OnTimeGUI ()

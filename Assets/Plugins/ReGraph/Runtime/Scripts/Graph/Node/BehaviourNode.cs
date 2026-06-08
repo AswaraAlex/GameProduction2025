@@ -123,6 +123,11 @@ namespace Reshape.ReGraph
             return false;
         }
         
+        public override bool IsRequireUninit ()
+        {
+            return false;
+        }
+        
         public override bool IsRequireBegin ()
         {
             return false;
@@ -137,7 +142,18 @@ namespace Reshape.ReGraph
         {
             return false;
         }
-        
+
+        protected void UpdateConditionNode (GraphExecution execution, int updateId, bool result)
+        {
+            for (var i = 0; i < children.Count; ++i)
+            {
+                if (children[i] is YesConditionNode yesNode)
+                    yesNode.MarkExecute(execution, updateId, result);
+                else if (children[i] is NoConditionNode noNode)
+                    noNode.MarkExecute(execution, updateId, result);
+            }
+        }
+
 #if UNITY_EDITOR
         public override void OnPrintFlow (int state)
         {

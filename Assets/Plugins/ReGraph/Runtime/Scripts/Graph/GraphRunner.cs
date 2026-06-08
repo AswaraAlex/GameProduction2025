@@ -310,7 +310,7 @@ namespace Reshape.ReGraph
         {
             if (graph.HaveRequireUpdate())
                 OmitTick();
-            if (graph.HaveRequireInit())
+            if (graph.HaveRequireInit() || graph.HaveRequireUninit())
                 Deactivate();
             DoneUninit();
         }
@@ -385,7 +385,7 @@ namespace Reshape.ReGraph
                 OmitUninit();
                 if (graph.HaveRequireUpdate())
                     OmitTick();
-                if (graph.HaveRequireInit())
+                if (graph.HaveRequireInit() || graph.HaveRequireUninit())
                     Deactivate();
             }
         }
