@@ -264,7 +264,6 @@ MonoBehaviour:
     - rid: 8423807625583394828
     - rid: 8423807625583394829
     - rid: 8423807625583394830
-    - rid: 8423807625583394831
     - rid: 8423807625583394832
     - rid: 1724496470795092202
     - rid: 1724496470795092203
@@ -276,6 +275,7 @@ MonoBehaviour:
     - rid: 1724496470795092324
     - rid: 1724496470795092325
     - rid: 1724496470795092326
+    - rid: 7637685164928925840
     executes:
       executionList:
       - state: 1
@@ -287,12 +287,12 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: 753155269
-    viewPosition: {x: 566.4, y: -2156, z: 0}
-    viewScale: {x: 2.0113573, y: 2.0113573, z: 1}
+    viewPosition: {x: 489.6, y: -2266.4, z: 0}
+    viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: -2
-    previewSelected: 0
+      rid: 7637685164928925840
+    previewSelected: 1
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
@@ -918,6 +918,68 @@ MonoBehaviour:
         - rid: 1851010444251365426
         drawGizmos: 0
         actionName: {fileID: 11400000, guid: 39a11f4b939ab4ff8af374d902bed8b9, type: 2}
+    - rid: 7637685164928925840
+      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: d2a134c75165fdd4cac6c331ba262109
+        printDebugLog: 1
+        position: {x: 4.799988, y: 2496}
+        dirty: 0
+        forceRepaint: 0
+        children:
+        - rid: 8423807625583394832
+        parent:
+          rid: -2
+        parents:
+        - rid: 8423807625583394830
+        drawGizmos: 0
+        executionType: 10
+        actor:
+          dirty: 0
+          stringValue: U-BEE
+          variableValue: {fileID: 0}
+          type: 0
+        sceneObject:
+          dirty: 0
+          objectValue:
+            type: 6040
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: Avatar
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        dialog:
+          dirty: 0
+          stringValue: '"You can ask the scary Pakyong Dancer. Tok Dalang usually
+            the one deals with this, not me."'
+          variableValue: {fileID: 0}
+          type: 0
+        gameObject:
+          dirty: 0
+          objectValue:
+            type: 100
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 0}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
     - rid: 8423807625583394816
       type: {class: AudioBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -1685,7 +1747,7 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 8423807625583394831
+        - rid: 7637685164928925840
         - rid: 1724496470795092326
         parent:
           rid: -2
@@ -1722,68 +1784,6 @@ MonoBehaviour:
           floatValue: 0
           variableValue: {fileID: 0}
           type: 0
-    - rid: 8423807625583394831
-      type: {class: DialogBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
-      data:
-        enabled: 1
-        guid: a535ab4e47c68b240bcf3903759fea5f
-        printDebugLog: 1
-        position: {x: 6, y: 2496.52}
-        dirty: 0
-        forceRepaint: 0
-        children:
-        - rid: 8423807625583394832
-        parent:
-          rid: -2
-        parents:
-        - rid: 8423807625583394830
-        drawGizmos: 0
-        executionType: 10
-        actor:
-          dirty: 0
-          stringValue: U-BEE
-          variableValue: {fileID: 0}
-          type: 0
-        sceneObject:
-          dirty: 0
-          objectValue:
-            type: 6040
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: Avatar
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        dialog:
-          dirty: 0
-          stringValue: "\u201CYou can ask the scary Pakyong Dancer. Tok Dalang usually
-            the one\r deals with this, not me.\u201D\r"
-          variableValue: {fileID: 0}
-          type: 0
-        gameObject:
-          dirty: 0
-          objectValue:
-            type: 100
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: 
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
     - rid: 8423807625583394832
       type: {class: AudioBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
@@ -1798,7 +1798,7 @@ MonoBehaviour:
         parent:
           rid: -2
         parents:
-        - rid: 8423807625583394831
+        - rid: 7637685164928925840
         drawGizmos: 0
         executionType: 200
         audioController:
@@ -2356,12 +2356,12 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: -1037282085
-    viewPosition: {x: 644.8, y: -786.4, z: 0}
+    viewPosition: {x: 252, y: -460.8, z: 0}
     viewScale: {x: 1.3225, y: 1.3225, z: 1}
     haveValidGraphId: 1
     previewNode:
-      rid: 1724496470795092293
-    previewSelected: 1
+      rid: -2
+    previewSelected: 0
     multipleSelectionWarning: Multiple Graph Nodes Selected!
     editInPrefabModeWarning: 
   references:
