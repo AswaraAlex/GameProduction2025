@@ -215,15 +215,15 @@ MonoBehaviour:
       rid: 7637685174256009456
     nodes:
     - rid: 7637685174256009456
-    - rid: 7637685174256009457
-    - rid: 7637685174256009503
-    - rid: 7637685174256009504
-    - rid: 7637685174256009505
+    - rid: 7637685287831994693
+    - rid: 7637685287831994694
+    - rid: 7637685287831994695
+    - rid: 7637685287831994696
     executes:
       executionList: []
     id: 22704348
-    viewPosition: {x: 254.4, y: -325.6, z: 0}
-    viewScale: {x: 1.3225, y: 1.3225, z: 1}
+    viewPosition: {x: 406, y: 14, z: 0}
+    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -245,67 +245,66 @@ MonoBehaviour:
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 7637685174256009457
+        - rid: 7637685287831994693
         parent:
           rid: -2
         parents: []
         drawGizmos: 0
-    - rid: 7637685174256009457
+    - rid: 7637685287831994693
       type: {class: ActionTriggerNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
         enabled: 1
-        guid: 36610ade7a5a4f44d8cb3884905bf7ab
+        guid: da271b092a99ca940a7eb931b83a92df
         printDebugLog: 1
-        position: {x: -0.0000038146973, y: 122.4}
+        position: {x: 19.300034, y: 145.06668}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 7637685174256009503
+        - rid: 7637685287831994694
         parent:
           rid: -2
         parents:
         - rid: 7637685174256009456
         drawGizmos: 0
         actionName: {fileID: 11400000, guid: 39a11f4b939ab4ff8af374d902bed8b9, type: 2}
-    - rid: 7637685174256009503
-      type: {class: GameObjectBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+    - rid: 7637685287831994694
+      type: {class: AnimatorBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
         enabled: 1
-        guid: e03630b35372cea4abf0e4178212b6df
+        guid: 300424cd2eb6f0044a70d18f761279b0
         printDebugLog: 1
-        position: {x: 0, y: 244.8}
+        position: {x: 19.300034, y: 267.0667}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 7637685174256009504
+        - rid: 7637685287831994695
         parent:
           rid: -2
         parents:
-        - rid: 7637685174256009457
+        - rid: 7637685287831994693
         drawGizmos: 0
-        executionType: 30
-        gameObject:
+        executionType: 20
+        animator:
           dirty: 0
           objectValue:
-            type: 100
-            gameObject: {fileID: 22704345}
+            type: 1130
+            gameObject: {fileID: 0}
             audioMixer: {fileID: 0}
             material: {fileID: 0}
             sprite: {fileID: 0}
             mesh: {fileID: 0}
             scriptableObject: {fileID: 0}
-            component: {fileID: 0}
+            component: {fileID: 1026880352}
             showType: 0
             showAsNodeProperty: 1
             displayName: 
             dirty: 0
           variableValue: {fileID: 0}
           type: 0
-        component: {fileID: 22704347}
-        location:
+        character:
           dirty: 0
           objectValue:
-            type: 1000
+            type: 5500
             gameObject: {fileID: 0}
             audioMixer: {fileID: 0}
             material: {fileID: 0}
@@ -315,73 +314,80 @@ MonoBehaviour:
             component: {fileID: 0}
             showType: 0
             showAsNodeProperty: 1
-            displayName: GameObjectLocation
+            displayName: Character
             dirty: 0
           variableValue: {fileID: 0}
           type: 0
-        parentTransform:
+        parameter: -1070292490
+        parameterName:
           dirty: 0
-          objectValue:
-            type: 1000
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: GameObjectParent
-            dirty: 0
+          stringValue: 
           variableValue: {fileID: 0}
           type: 0
-        actionName: {fileID: 0}
-        objectVariable: {fileID: 0}
-        uiLayer: 0
-        paramBool: 0
-    - rid: 7637685174256009504
+        paramValue:
+          dirty: 0
+          floatValue: 0
+          variableValue: {fileID: 0}
+          type: 0
+    - rid: 7637685287831994695
       type: {class: WaitBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
         enabled: 1
-        guid: a808290df69287a4882f129c56932968
+        guid: 7d4b16f81033f154cb68526ac4903f8d
         printDebugLog: 1
-        position: {x: 0, y: 367.2}
+        position: {x: 19.966705, y: 389.73334}
         dirty: 0
         forceRepaint: 0
         children:
-        - rid: 7637685174256009505
+        - rid: 7637685287831994696
         parent:
           rid: -2
         parents:
-        - rid: 7637685174256009503
+        - rid: 7637685287831994694
         drawGizmos: 0
         time:
           dirty: 0
           floatValue: 1
           variableValue: {fileID: 0}
           type: 0
-    - rid: 7637685174256009505
-      type: {class: GameObjectBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+    - rid: 7637685287831994696
+      type: {class: ActionBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
       data:
         enabled: 1
-        guid: 80048811d34e39d4b838916bb58c73e4
+        guid: a1a1c38ef0fd0d74b95a5918c96dc2e1
         printDebugLog: 1
-        position: {x: 0, y: 489.59998}
+        position: {x: 19.966705, y: 511.7334}
         dirty: 0
         forceRepaint: 0
         children: []
         parent:
           rid: -2
         parents:
-        - rid: 7637685174256009504
+        - rid: 7637685287831994695
         drawGizmos: 0
-        executionType: 11
-        gameObject:
+        executionType: 10
+        graph:
           dirty: 0
           objectValue:
-            type: 100
-            gameObject: {fileID: 22704345}
+            type: 4900
+            gameObject: {fileID: 0}
+            audioMixer: {fileID: 0}
+            material: {fileID: 0}
+            sprite: {fileID: 0}
+            mesh: {fileID: 0}
+            scriptableObject: {fileID: 0}
+            component: {fileID: 1956391536}
+            showType: 0
+            showAsNodeProperty: 1
+            displayName: 
+            dirty: 0
+          variableValue: {fileID: 0}
+          type: 0
+        character:
+          dirty: 0
+          objectValue:
+            type: 5500
+            gameObject: {fileID: 0}
             audioMixer: {fileID: 0}
             material: {fileID: 0}
             sprite: {fileID: 0}
@@ -394,45 +400,10 @@ MonoBehaviour:
             dirty: 0
           variableValue: {fileID: 0}
           type: 0
-        component: {fileID: 0}
-        location:
-          dirty: 0
-          objectValue:
-            type: 1000
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: GameObjectLocation
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        parentTransform:
-          dirty: 0
-          objectValue:
-            type: 1000
-            gameObject: {fileID: 0}
-            audioMixer: {fileID: 0}
-            material: {fileID: 0}
-            sprite: {fileID: 0}
-            mesh: {fileID: 0}
-            scriptableObject: {fileID: 0}
-            component: {fileID: 0}
-            showType: 0
-            showAsNodeProperty: 1
-            displayName: GameObjectParent
-            dirty: 0
-          variableValue: {fileID: 0}
-          type: 0
-        actionName: {fileID: 0}
-        objectVariable: {fileID: 0}
-        uiLayer: 0
-        paramBool: 0
+        targetAim: {fileID: 0}
+        stamina: {fileID: 0}
+        attackSkill: {fileID: 0}
+        actionName: {fileID: 11400000, guid: 1a8ac9216f6714c839078221478d4fd2, type: 2}
 --- !u!114 &22704349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5acbd385ec9e10448bd8d421cc052f45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09320d7a68eaf504eb3b695128f5a3b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4389,8 +4360,8 @@ MonoBehaviour:
     executes:
       executionList: []
     id: 386220521
-    viewPosition: {x: 319.2, y: -155.2, z: 0}
-    viewScale: {x: 1.15, y: 1.15, z: 1}
+    viewPosition: {x: 414.66666, y: -18.666666, z: 0}
+    viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -5209,7 +5180,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
     - rid: 5912356919309762838
@@ -5429,7 +5400,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
     - rid: 5912356919309762876
@@ -14335,7 +14306,7 @@ MonoBehaviour:
     executes:
       executionList: []
     id: 1837917903
-    viewPosition: {x: -6.4, y: -517.6, z: 0}
+    viewPosition: {x: 170.66667, y: -382, z: 0}
     viewScale: {x: 1.15, y: 1.15, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -14722,7 +14693,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
     - rid: 5912356919309762838
@@ -15014,7 +14985,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
 --- !u!65 &1837917904
@@ -16181,7 +16152,7 @@ MonoBehaviour:
     executes:
       executionList: []
     id: 1900629585
-    viewPosition: {x: 131.2, y: -413.6, z: 0}
+    viewPosition: {x: 311.33334, y: -344, z: 0}
     viewScale: {x: 1, y: 1, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -16568,7 +16539,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
     - rid: 5912356919309762838
@@ -16860,7 +16831,7 @@ MonoBehaviour:
         drawGizmos: 0
         time:
           dirty: 0
-          floatValue: 6
+          floatValue: 7
           variableValue: {fileID: 0}
           type: 0
 --- !u!1 &1915409155
