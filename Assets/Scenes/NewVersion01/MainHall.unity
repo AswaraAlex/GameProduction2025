@@ -25370,10 +25370,11 @@ MonoBehaviour:
     - rid: 1724496354067873794
     - rid: 1724496470795092112
     - rid: 1724496470795092292
+    - rid: 7637685377534787584
     executes:
       executionList: []
     id: 1111007108
-    viewPosition: {x: 444.66666, y: -45.333332, z: 0}
+    viewPosition: {x: 292, y: -200.66667, z: 0}
     viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
     haveValidGraphId: 1
     previewNode:
@@ -25982,6 +25983,7 @@ MonoBehaviour:
         forceRepaint: 0
         children:
         - rid: 5912356901124309048
+        - rid: 7637685377534787584
         parent:
           rid: -2
         parents:
@@ -26687,6 +26689,23 @@ MonoBehaviour:
         objectVariable: {fileID: 0}
         uiLayer: 0
         paramBool: 0
+    - rid: 7637685377534787584
+      type: {class: TriggerBehaviourNode, ns: Reshape.ReGraph, asm: Reshape.ReGraph.Runtime}
+      data:
+        enabled: 1
+        guid: 8f1ba5b81316b2849b1273251ce5bc3c
+        printDebugLog: 1
+        position: {x: 410.53333, y: 558}
+        dirty: 0
+        forceRepaint: 0
+        children: []
+        parent:
+          rid: -2
+        parents:
+        - rid: 5912356901124309047
+        drawGizmos: 0
+        triggerNode: 44db66056da16164a9bce9c0b2b0e92d
+        executionType: 11
 --- !u!65 &1111007109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41626,7 +41645,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1.5}
-  m_SizeDelta: {x: 30, y: 5}
+  m_SizeDelta: {x: 20.5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993568455
 MonoBehaviour:
@@ -41651,13 +41670,14 @@ MonoBehaviour:
   m_text: (E) Talk to UBEE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 255b31a576a194d42b8dcde942462bf2, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2504916601794976441, guid: 255b31a576a194d42b8dcde942462bf2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278231778
   m_fontColor: {r: 0.8862745, g: 0.63529414, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -41717,7 +41737,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1993568456}
   m_maskType: 0
 --- !u!23 &1993568456
@@ -41740,7 +41760,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -2504916601794976441, guid: 255b31a576a194d42b8dcde942462bf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47318,8 +47338,8 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: 691142602
-    viewPosition: {x: 262.4, y: -2607.2, z: 0}
-    viewScale: {x: 1, y: 1, z: 1}
+    viewPosition: {x: 302.4, y: 198.4, z: 0}
+    viewScale: {x: 0.375937, y: 0.375937, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -48143,7 +48163,8 @@ MonoBehaviour:
           type: 0
         dialog:
           dirty: 0
-          stringValue: " \u201CAnd that is me!\u201D"
+          stringValue: " \u201COh, that is me! Umm but uh actually it's pronounce
+            OO BEE not YU BEE. Get it right.\u201D"
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -48361,7 +48382,7 @@ MonoBehaviour:
         dialog:
           dirty: 0
           stringValue: "\u201COh ya I remember her! How is she? Salma was it? Haven't
-            seen her for a long time. How is she?\u201D"
+            seen her for a long time.\""
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -48469,7 +48490,7 @@ MonoBehaviour:
           type: 0
         dialog:
           dirty: 0
-          stringValue: "\u201CUhm, she\u2019s gone. Died last year.\u201D"
+          stringValue: "\u201CUhm, dah tak ada. She died last year.\u201D"
           variableValue: {fileID: 0}
           type: 0
         gameObject:
@@ -50419,8 +50440,8 @@ MonoBehaviour:
           characterBrainAddon: {fileID: 0}
         lastExecutedUpdateId: 412
     id: -939943980
-    viewPosition: {x: 480, y: -362, z: 0}
-    viewScale: {x: 0.8695652, y: 0.8695652, z: 1}
+    viewPosition: {x: 259.2, y: 40, z: 0}
+    viewScale: {x: 0.32690176, y: 0.32690176, z: 1}
     haveValidGraphId: 1
     previewNode:
       rid: -2
@@ -51984,7 +52005,7 @@ MonoBehaviour:
           dirty: 0
           stringValue: "\u201COkay, okay calm down. Take a-a breather? Chill out.
             I\u2019m here, I can fix them and I can help you find them. Does that
-            sound good to you, buddy?\u201D"
+            sound good to you?\u201D"
           variableValue: {fileID: 0}
           type: 0
         gameObject:
